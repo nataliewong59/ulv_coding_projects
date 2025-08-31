@@ -1,0 +1,219 @@
+* { box-sizing: border-box; }
+main {   padding: 0 1em 1em; }
+
+/* 10/11/23 NWong MOD 2L: Configure the default font for the whole site, no margin */
+body {font-family: Verdana, Arial, sans-serif;
+      margin: 0;}
+
+/* 10/11/23 NWong NEW 7L: Configure the header and its background image */
+header { height: 120px; 
+	background-image: url(images/logo.png);
+         background-repeat: no-repeat; 
+	background-size: auto 90%; 
+	background-position: center;
+	margin-bottom: 10px; 
+	background-color: #F2BBA7; }
+
+img { max-width: 100%;
+	height: auto; }
+
+/* 10/11/23 NWong NEW 3L: configure font and size for paragraph element, configured to clear floating elements */
+p { font-size: 14pt;
+	font-family: Georgia,"Times New Roman", serif;
+	clear: both;}
+
+/* 10/11/23 NWong NEW 1L: configure the font color,padding, and background color of h3 elements */
+h3 { color: #FFFFFF;
+	background-color: #912B40;
+	padding: 5px; }
+/* 10/11/23 NWong MOD 4L: configure the font size, color, alignment, and shadow of h2 elements */
+h2 { color: #912B40;
+	font-size: 200%;
+	text-align: center; 
+	text-shadow: 2px 2px 2px #FFFFFF;}
+
+/* 10/11/23 NWong NEW 3L: configure the font, size, and color of summary element */
+summary { color: #912B40;
+	font-size: 14pt;
+	font-family: Georgia,"Times New Roman", serif; }
+
+/* 10/11/23 NWong MOD 6L: configure the horizontal navigation */
+nav ul { padding-left: 0;
+         display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: center;
+	list-style-type: none; }
+
+/* 10/11/23 NWong NEW 3L: configure size and spacing of the navigation images */	  
+nav li { width: 130px;
+	margin: 0.3em;
+	margin-left: 0.6em; }
+
+nav a { text-decoration: none;}
+
+/* 10/11/23 NWong MOD 3L: configure color or background color of text links based on scenario */
+nav a:link { color: #000000; }
+nav a:visited { color: #3c5c72; } 
+nav ul ul li:hover  { background-color: #93abba;}
+
+/* 10/11/23 NWong NEW 13L: configure vertical drop down navigation for submenu */
+nav ul ul { position: absolute;
+         	background-color: #3C5C72;
+         	padding: 10px;
+         	text-align: center;
+         	display: none; }
+nav ul ul li { border: 1px solid #FFFFFF;
+         	display: block;
+		font-size: 11pt;
+         	width: 7.5em;
+         	padding: 0.5em;
+         	margin: 0.5em; 
+		transition: background-color 1s linear;}
+nav li:hover ul { display: block;}
+
+/* 10/11/23 NWong MOD 7L: configure the footer area */
+footer { text-align: center;
+	font-style: italic;
+	padding: 1em;
+	margin-top : 10px;
+	font-size: small;
+	background-color: #F2BBA7;
+	color: #000000; }  
+
+/* 10/11/23 NWong NEW 3L: configure the fieldset and legend in the form */
+fieldset { border: solid 2px #912B40;
+	 }
+legend { color: #912B40;
+	font-size: 14pt; }
+
+/* 28/11/23 NWong NEW 3L: configure the label and input position in the form */
+label { font-size: 11pt;
+	font-family: Georgia,"Times New Roman", serif;
+	float: left; clear: left; display: block;
+	width: 150px;
+ 	text-align: left; }
+
+/* 10/11/23 NWong MOD 10L: configure the table including rows, columns, header, and caption */
+table { margin: auto;
+        border: 2px solid #912B40;
+        width: 90%; 
+	border-spacing: 0; }
+td, th { border: 1px solid #FFFFFF;
+         padding: 0.5em;
+         font-family: Georgia, "Times New Roman", Serif; }
+caption { font-weight: bold;
+          font-size: 12pt;
+          padding-bottom: 0.5em; }
+
+/* 10/11/23 NWong MOD 3L: configure the background color for certain table rows */
+tr:nth-of-type(even) { background-color: #f2e9d8; }
+tr:first-of-type { background-color: #912B40;
+		color: #FFFFFF }
+
+/* 10/11/23 NWong NEW 6L: configures an invisible anchor element over the header so website visitors can click the header background image to go back to the home apge */
+#headerlink { display: block; 
+		width: 20%;
+		height: 80%;
+		position: relative;
+		left: 40%;
+		top: 10%;}
+
+.mapiframe { width:100%; 
+	margin: 5px;
+	}
+/* 10/11/23 NWong MOD 13L: assigns elements on the page to grid areas, configures the layout of the entire web page */
+header { grid-area: h; }
+nav   { grid-area: n; }
+main   { grid-area: m; }
+footer { grid-area: f; }
+#wrapper {  background-color: #F8F2E7;
+	    padding: 10px; 
+            color: #000000;
+            display: grid;
+            grid-template: 
+			"h"
+			"n"
+			"m"
+			"f" ; }
+
+/* 10/11/23 NWong MOD 6L: media query for tablet view/resolution, configures the layout and size of different elements accordingly to ensure website looks good on a tablet */
+@media (min-width: 600px) {
+	header { background-image: url(images/title.png); }
+	p { clear: none; }
+	#headerlink { width: 80%;
+      		height: 80%;
+		left: 10%; }
+	.mapiframe { width:100%; }
+}
+
+/* 10/11/23 NWong MOD 26L: media query for desktop view/resolution, configures the layout and size of different elements accordingly to ensure website looks good on a desktop */
+@media (min-width: 750px) {
+	header { background-image: url(images/title.png); }
+	#headerlink { width: 60%;
+      		height: 80%;
+		left: 20%; }
+	p { clear: none; }
+/* 10/11/23 NWong NEW 14L: configures the navigation bar to be vertical when on desktop view */
+	nav ul { display: flex; 
+	           flex-direction: column; 
+	           flex-wrap: nowrap; }
+	nav ul ul { position: relative;
+         	background-color: #3C5C72;
+         	padding: 0.1em;
+         	text-align: center;
+         	display: none; }
+	nav ul ul li { border: 1px solid #FFFFFF;
+         	display: block;
+		font-size: 11pt;
+         	width: 7.5em;
+         	padding: 0.5em;
+         	margin: 0.5em; }
+/* 10/11/23 NWong MOD 5L: configures the desktop view layout for the page using grid template */
+         #wrapper { grid-template: 
+		             	" h   h"
+				" n   m"
+				" f   f"
+			        / 150px 1fr }
+	.mapiframe { width: 48%; }
+}
+
+#float { float: left; }
+#navcolor { background-color: #93ABBA; }
+.tableimgs { width: 300px; }
+/* 10/11/23 NWong NEW 3L: class to center assigned elements */
+.center { display: block;
+  	margin-left: auto;
+  	margin-right: auto; }
+#breadcrumbs { font-size: 11px; 
+		color: #912B40; }
+.notextdeco { text-decoration: none;
+		color: #bf757d; }
+
+/* 10/11/23 NWong NEW 4L: id to center everything in the div */
+#centerdiv { display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around; }
+
+/* 10/11/23 NWong NEW 4L: id to configure position of the social media icons */
+#centericons {display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; }
+
+.iconimg { margin: 5px; }
+
+/* 10/11/23 NWong MOD 4L: configure the span image, which only displays when hovered*/
+#qrthumbnail span { display: none; }
+#qrthumbnail a:hover span { display: block; 
+			position: relative; 
+			text-align: center;}
+
+
+
+
+
+        
+
+

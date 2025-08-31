@@ -1,0 +1,182 @@
+* { box-sizing: border-box; }
+main {   padding: 1em; }
+
+/* 10/11/23 NWong MOD 2L: Configure the default font for the whole site, no margin */
+body {font-family: Verdana, Arial, sans-serif;
+      margin: 0;}
+
+/* 10/11/23 NWong NEW 7L: Configure the header and its background image */
+header { height: 120px; 
+	background-image: url(images/logo.png);
+         background-repeat: no-repeat; 
+	background-size: auto 90%; 
+	background-position: center;
+	margin-bottom: 10px; 
+	background-color: #F2BBA7; }
+
+img { max-width: 100%; 
+	height: auto;}
+
+/* 10/11/23 NWong NEW 3L: configure font size, color, and font for paragraph element */
+p { font-size: 14pt;
+	font-family: Georgia,"Times New Roman", serif;
+	color: #FFFFFF; }
+
+/* 10/11/23 NWong MOD 4L: configure the font size, color, alignment, and shadow of h2 elements */
+h2 { color: #912B40;
+	font-size: 200%;
+	text-align: left;
+	text-shadow: 2px 2px 2px #FFFFFF; }
+
+/* 10/11/23 NWong NEW 1L: configure the font color of h3 elements */
+h3 { color: #FFFFFF; }
+
+nav { margin-bottom: 10px; }
+
+/* 10/11/23 NWong MOD 6L: configure the horizontal navigation */
+nav ul { padding-left: 0;
+         display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: center;
+	list-style-type: none; }	 
+
+/* 10/11/23 NWong NEW 3L: configure size and spacing of the navigation images */
+nav li { width: 130px;
+	margin: 0.3em;
+	margin-left: 0.6em; }
+
+nav a { text-decoration: none;}
+
+/* 10/11/23 NWong MOD 3L: configure color or background color of text links based on scenario */
+nav a:link { color: #000000; }
+nav a:visited { color: #3C5C72; } 
+nav ul ul li:hover  { background-color: #93ABBA;}
+
+
+
+/* 10/11/23 NWong NEW 13L: configure vertical drop down navigation for submenu */
+nav ul ul { position: absolute;
+         	background-color: #3c5c72;
+         	padding: 0.1em;
+         	text-align: center;
+         	display: none; }
+nav ul ul li { border: 1px solid #FFFFFF;
+         	display: block;
+		font-size: 11pt;
+         	width: 7.5em;
+         	padding: 0.5em;
+         	margin: 0.5em; 
+		transition: background-color 1s linear; }
+nav li:hover ul { display: block;}
+
+/* 10/11/23 NWong NEW 3L: configure the aside area */
+aside { display: block;
+	padding: 1em;
+	background-color: #912B40; }
+
+
+/* 10/11/23 NWong MOD 7L: configure the footer area */
+footer { text-align: center;
+	font-style: italic;
+	padding: 1em;
+	margin-top : 10px;
+	font-size: small;
+	background-color: #F2BBA7;
+	color: #000000; }  
+
+/* 10/11/23 NWong NEW 2L: configure the iframe */
+iframe { width: 100%; 
+	border: 0; }
+
+/* 10/11/23 NWong NEW 6L: configures an invisible anchor element over the header so website visitors can click the header background image to go back to the home apge */
+#headerlink { display: block; 
+		width: 20%;
+		height: 80%;
+		position: relative;
+		left: 40%;
+		top: 10%;}
+
+#navcolor { background-color: #93ABBA; }
+
+/* 10/11/23 NWong MOD 5L: configure the gallery div, which determines how the artworks are displayed on the page */
+#gallery { display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #FFFFFF; }
+
+/* 10/11/23 NWong MOD 5L: configure the the individual list items/photos within the gallery div */
+#gallery ul { list-style-type: none; 
+		margin-left: 4%;
+	}
+#gallery li { display: inline; }
+#gallery img { max-width: 90%; }
+#gallery video { max-width: 90%; }
+
+.notextdeco { text-decoration: none;
+		color: #bf757d; }
+
+/* 10/11/23 NWong NEW 2L: configures the color and size of the breadcrumb text */
+#breadcrumbs { font-size: 11px; 
+		color: #912B40; }
+
+
+/* 10/11/23 NWong MOD 15L: assigns elements on the page to grid areas, configures the layout of the entire web page */
+header { grid-area: h; }
+nav   { grid-area: n; }
+main   { grid-area: m; }
+aside  { grid-area: a; }
+footer { grid-area: f; }
+#wrapper {  background-color: #F8F2E7;
+	    padding: 10px; 
+            color: #000000;
+            display: grid;
+            grid-template: 
+			"h"
+			"n"
+			"a"
+			"m"
+			"f" ; }
+
+
+/* 10/11/23 NWong MOD 7L: media query for tablet view/resolution, configures the layout and size of different elements accordingly to ensure website looks good on a tablet */
+@media (min-width: 600px) {
+	header { background-image: url(images/title.png); }
+	#gallery img { max-width: 45%; }
+	#gallery video { max-width: 45%; }
+	#headerlink { width: 80%;
+      		height: 80%;
+		left: 10%; }
+
+/* 10/11/23 NWong MOD 26L: media query for desktop view/resolution, configures the layout and size of different elements accordingly to ensure website looks good on a desktop */
+@media (min-width: 950px) {
+	header { background-image: url(images/title.png); }
+	#headerlink { width: 60%;
+      		height: 80%;
+		left: 20%; }
+	#gallery img { max-width: 45%; }
+	#gallery video { max-width: 45%; }
+/* 10/11/23 NWong NEW 14L: configures the navigation bar to be vertical when on desktop view */
+	nav ul { display: flex; 
+	           flex-direction: column; 
+	           flex-wrap: nowrap; }
+	nav ul ul { position: relative;
+         	background-color: #3c5c72;
+         	padding: 0.1em;
+         	text-align: center;
+         	display: none; }
+	nav ul ul li { border: 1px solid #FFFFFF;
+         	display: block;
+		font-size: 11pt;
+         	width: 7.5em;
+         	padding: 0.5em;
+         	margin: 0.5em; }
+/* 10/11/23 NWong MOD 5L: configures the desktop view layout for the page using grid template */
+         #wrapper { grid-template: 
+		             	" h   h   h"
+				" n   m   a"
+				" f   f   f"
+			        / 150px 1fr 20%; }
+}
+}
