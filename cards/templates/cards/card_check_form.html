@@ -1,6 +1,0 @@
-<form method="post" class="card-check-form {% if solved %}know-btn{% else %}dont-know-btn{% endif %}">
-    {% csrf_token %}
-    <input type="hidden" name="card_id" value="{{ card.id }}">
-    <input type="hidden" name="solved" value="{{ solved }}">
-    <input type="submit" value="{% if solved %}✅ I know{% else %}❌ I don't know{% endif %}">
-</form>
