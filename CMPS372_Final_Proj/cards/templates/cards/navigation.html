@@ -1,0 +1,12 @@
+<!-- cards/templates/cards/navigation.html -->
+{% load static %}
+{% load cards_tags %}
+{% load cards_tags %}
+
+<nav>
+    <img src="{% static 'cards/logo.png' %}" alt="Flashcards Logo" class="logo" >
+    <a href="{% url 'index' %}">🏠 Home</a>
+    <a href="{% url 'box-list' %}">📦 Manage Boxes</a>
+    {% boxes_as_links %}
+    
+</nav>

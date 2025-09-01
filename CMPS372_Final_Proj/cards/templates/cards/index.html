@@ -1,0 +1,13 @@
+{% extends "cards/base.html" %}
+{% load static %}
+
+{% block content %}
+  <div style="text-align: center; margin-top: 4rem;">
+    <h1 style="font-size: 2.5rem; margin-top: 1rem;">Welcome to <span style="color:#6C63FF;">Wuizlet</span></h1>
+    <p style="font-size: 1.2rem; margin: 1rem 0;">Study smarter, not pricier ✨</p>
+
+    <a href="{% url 'box-list' %}" style="display: inline-block; padding: 1rem 2rem; background-color: #6C63FF; color: white; border-radius: 8px; text-decoration: none; font-size: 1rem; margin-top: 2rem;">
+      Start Studying
+    </a>
+  </div>
+{% endblock %}

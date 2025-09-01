@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wuizlet</title>
+    <link rel="stylesheet" href="{% static 'cards/style.css' %}">
+    <style>
+      body.theme-default .background {
+        background: linear-gradient(to top, #aee1f9, #f5f7fa);
+      }
+      body.theme-night .background {
+        background: linear-gradient(to top, #0d1b2a, #1b263b);
+      }
+      body.theme-sunset .background {
+        background: linear-gradient(to top, #ff9a9e, #fad0c4);
+      }
+      .cloud, .stars::before {
+        transition: opacity 0.5s ease;
+      }
+      .cloud {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        opacity: 0.6;
+        animation: floatClouds 60s linear infinite;
+      }
+      .cloud1 {
+        width: 150px; height: 80px;
+        top: 20%; left: -200px;
+        animation-delay: 0s;
+      }
+      .cloud2 {
+        width: 100px; height: 60px;
+        top: 40%; left: -150px;
+        animation-delay: 20s;
+      }
+      @keyframes floatClouds {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(120vw); }
+      }
+      .stars::before {
+        content: '';
+        position: absolute;
+        width: 2px; height: 2px;
+        background: white;
+        border-radius: 50%;
+        top: 30%; left: 50%;
+        box-shadow: 20px 30px white, 60px 90px white, 100px 10px white, 200px 150px white;
+        opacity: 0;
+      }
+      body.theme-night .stars::before {
+        opacity: 0.8;
+      }
+      .theme-toggle {
+        position: fixed;
+        top: 10px; right: 20px;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .theme-label {
+        font-size: 1.2rem;
+      }
+      .theme-select {
+        padding: 0.4rem 1rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        border: none;
+        font-weight: bold;
+      }
+      .theme-select option[value="default"] {
+        background-color: #ffde59;
+        color: #333;
+      }
+      .theme-select option[value="night"] {
+        background-color: #1b263b;
+        color: white;
+      }
+      .theme-select option[value="sunset"] {
+        background-color: #ff9a9e;
+        color: white;
+      }
+      .content-box {
+        max-width: 800px;
+        margin: 5rem auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        position: relative;
+      }
+      #lofi-toggle {
+        cursor: pointer;
+        font-size: 1.2rem;
+        background: none;
+        border: none;
+        color: #555;
+      }
+      button, a[role="button"] {
+        display: inline-block;
+        padding: 0.6rem 1.4rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+        background-color: #6c63ff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      button:hover, a[role="button"]:hover {
+        background-color: #574fd6;
+        transform: translateY(-2px);
+      }
+    </style>
+</head>
+<body class="theme-default">
+<div class="theme-toggle">
+  <select id="themeSelector" class="theme-select">
+    <option value="default">🌤️ Day</option>
+    <option value="night">🌙 Night</option>
+    <option value="sunset">🌇 Sunset</option>
+  </select>
+  <button id="lofi-toggle">🎵 Lo-fi Off</button>
+</div>
+<audio id="lofi-audio" preload="auto" loop>
+  <source src="{% static 'cards/lofi.mp3' %}" type="audio/mpeg">
+</audio>
+<div class="background">
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="stars"></div>
+</div>
+<div class="content-box">
+  {% include 'cards/navigation.html' %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const themeSelector = document.getElementById("themeSelector");
+    const lofiToggle = document.getElementById("lofi-toggle");
+    const lofiAudio = document.getElementById("lofi-audio");
+    let isPlaying = false;
+
+    const savedTheme = localStorage.getItem("theme") || "default";
+    document.body.className = `theme-${savedTheme}`;
+    themeSelector.value = savedTheme;
+
+    themeSelector.addEventListener("change", () => {
+      document.body.className = `theme-${themeSelector.value}`;
+      localStorage.setItem("theme", themeSelector.value);
+    });
+
+    lofiToggle.addEventListener("click", async () => {
+      try {
+        if (!isPlaying) {
+          await lofiAudio.play();
+          isPlaying = true;
+          lofiToggle.textContent = "🎵 Lo-fi On";
+        } else {
+          lofiAudio.pause();
+          isPlaying = false;
+          lofiToggle.textContent = "🎵 Lo-fi Off";
+        }
+      } catch (err) {
+        console.warn("Audio playback error:", err);
+      }
+    });
+  });
+</script>
+</body>
+</html>
