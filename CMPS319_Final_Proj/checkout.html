@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Coded by" content="Natalie Vidarte Alvarado">
+
+    <meta name="keywords" content="Twice as Nice, crochet, beginner-level, beginner, beginners, intermediate-level, intermediate Patterns, advanced-level, supplies, must haves.">
+
+    <meta name="description" content="Ready to make the big purchase? This form walks throught the user to pay for their corchet goodies!">
+
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- STYLE FOR CART -->
+<style>
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #fcd5ce;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #fadde1;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #ff7587;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #f691bd;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <header class="header">
+           
+<!--Navigation-->
+    <!--6/5/2024 NWong MOD 37L: modify the desktop navigation to fit with our sitemap, move our logo to the top-->
+    <div id="wrapper">
+        <header class="header">
+            <nav class="desktop-menu">
+                <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="patterns.html">Patterns</a>
+                            <ul class="submenu">
+                                <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                                <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                                <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                                <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                                <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                                <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                                <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                            <ul class="submenu">
+                                <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                                <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                                <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="customOrders.html">Custom Orders</a></li>
+                        <li><a href="supplies.html">Supplies</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li>
+                            <a href="aboutUs.html">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="ourMission.html">Our Mission</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+    
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var submenuItems = document.querySelectorAll('.desktop-menu .submenu');
+        
+                        submenuItems.forEach(function (item) {
+                            var parentItem = item.closest('li');
+        
+                            if (parentItem) {
+                                parentItem.addEventListener('mouseenter', function () {
+                                    item.classList.add('active');
+                                });
+        
+                                parentItem.addEventListener('mouseleave', function () {
+                                    item.classList.remove('active');
+                                });
+                            }
+                        });
+                    });
+                </script>
+            </nav>
+               
+            <nav class="mobile-menu">
+                <div class="menu-toggle" id="mobile-menu">
+                  <div class="btn15" data-menu="15">
+                    <div class="icon">
+                    </div>
+                  </div>  
+                  <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenu = document.getElementById("mobile-menu");
+        var mainMenu = document.querySelector(".menu");
+    
+        mobileMenu.addEventListener("click", function () {
+            mainMenu.classList.toggle("active");
+        });
+    });
+            </script>
+                <!--6/5/2024 NWong MOD 32L: modify the mobile navigation to fit with our sitemap, move our logo to the top-->
+             <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="patterns.html">Patterns</a>
+                    <ul class="submenu">
+                        <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                        <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                        <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                        <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                        <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                        <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                        <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                    <ul class="submenu">
+                        <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                        <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                        <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="customOrders.html">Custom Orders</a></li>
+                <li><a href="supplies.html">Supplies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="ourMission.html">Our Mission</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+   
+</header>
+
+
+  
+<!-- Thumbnail -->
+<section id="thumbnailabout"></section>
+
+<div id="img-overlay">
+    <h2 id="title" class="h2white">Shopping Cart</h2>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var imgOverlay = document.getElementById("img-overlay");
+
+        function slideUpOnScroll() {
+            var bounding = imgOverlay.getBoundingClientRect();
+
+            if (
+                bounding.top >= 0 &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            ) {
+                imgOverlay.classList.add("active");
+            }
+        }
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", slideUpOnScroll);
+
+        // Trigger the animation on page load
+        slideUpOnScroll();
+    });
+</script>
+
+<div class="breadcrumb">
+  <a href="home.html">Home / </a>
+  <a href="cart.html">Cart / </a>
+  <a href="checkout.html">Checkout</a>
+</div>
+        
+
+ <!-- ------------------------------Shop By Category----------------------------------- -->
+ <h2>Checkout</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form id="checkoutForm">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001" pattern="[0-9]{5}" required title="Please enter a valid zip code (5 digits)">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required pattern="\d{4}-\d{4}-\d{4}-\d{4}" title="Please enter a valid credit card number">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <div class="row">
+                <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                </div>
+                <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" pattern="[0-9]{3,4}" required title="Please enter a valid CVV (3 or 4 digits)">
+                </div>
+            </div>
+        </div>
+        
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b><span id="numProducts">0</span></b></span></h4>
+
+      <hr>
+      <p id="totalPrice">Total <span class="price" style="color:black"><b>$<span id="totalAmount">0.00</span></b></span></p> <!-- Update the total price here -->
+
+    </div>
+  </div>
+</div>
+<br><br><br>
+<script>
+       // Retrieve the cart data from localStorage
+       var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Count the number of products in the cart
+var numProducts = cart.length;
+
+// Update the number of products in the cart
+var numProductsElement = document.getElementById('numProducts');
+numProductsElement.textContent = numProducts;
+
+// Retrieve the total price from localStorage
+var totalPrice = localStorage.getItem('totalPrice');
+
+    // Function to check if all required fields are filled out
+    function validateForm() {
+      var inputs = document.querySelectorAll('#checkoutForm input[required]');
+      var valid = true;
+      inputs.forEach(function(input) {
+        if (!input.value.trim()) {
+          valid = false;
+          input.classList.add('error');
+        } else {
+          input.classList.remove('error');
+        }
+      });
+      return valid;
+    }
+  
+    // Event listener for form submission
+    document.getElementById('checkoutForm').addEventListener('submit', function(event) {
+      if (!validateForm()) {
+        event.preventDefault(); // Prevent form submission if validation fails
+        alert('Please fill out all required fields.');
+      } else {
+        // Show payment received message
+        alert('Payment received! Thank you for your purchase.');
+      }
+    });
+  
+    
+    // Retrieve the total price from localStorage
+    var totalPrice = localStorage.getItem('totalPrice');
+
+    // Update the total price on the page
+    var totalAmount = document.getElementById('totalAmount');
+    totalAmount.textContent = totalPrice;
+
+
+  </script>
+  
+  
+<br><br><br>
+
+    <!--footer-->
+    <footer><br>
+      <div class="navbar">
+                  <!--6/5/2024 NWong MOD 9L: modify footer links to match our sitemap-->
+              <a href="home.html">Home</a> 
+              <a href="patterns.html">Patterns</a>
+              <a href="products.html">Products</a> 
+              <a href="customOrders.html">Custom Orders</a> 
+              <a href="supplies.html">Supplies</a> 
+              <a href="workshops.html">Workshops</a> 
+              <a href="FAQ.html">FAQS</a> 
+              <a href="aboutUs.html">About Us</a> 
+              <a href="contact.html">Contact Us</a> 
+      </div><br>
+      The site best viewed in Firefox or Chrome<br>
+              <!--6/5/2024 NWong MOD 2L: modify copyright and email to match out company-->
+         Twice As Nice Crochet Copyright &copy; 2024
+         <a href="mailto:twiceasnicecrochet@gmail.com">twiceasnicecrochet@gmail.com</a><br><br>
+         
+          <!--6/5/2024 NWong NEW 4L: add page last modified info to footer-->
+      <script type = "text/javascript">
+          var modDate = new Date( document.lastModified );
+          document.write ( "This page was last modified " + modDate.toLocaleString() );
+      </script>
+  </footer>
+</body>
+</html>

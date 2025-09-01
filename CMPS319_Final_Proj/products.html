@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Coded by" content="Natalie Vidarte Alvarado">
+
+    <meta name="keywords" content="Twice as Nice, crochet, beginner-level, beginner, beginners, intermediate-level, intermediate Patterns, advanced-level, supplies, must haves.">
+
+    <meta name="description" content="Shop by category or shope all! We have Handmade crochet items for you or loved ones! Perfect for gifts!">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Patterns</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print" />
+</head>
+<body>
+      
+<!--Navigation-->
+    <!--6/5/2024 NWong MOD 37L: modify the desktop navigation to fit with our sitemap, move our logo to the top-->
+    <div id="wrapper">
+        <header class="header">
+            <nav class="desktop-menu">
+                <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="patterns.html">Patterns</a>
+                            <ul class="submenu">
+                                <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                                <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                                <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                                <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                                <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                                <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                                <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                            <ul class="submenu">
+                                <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                                <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                                <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="customOrders.html">Custom Orders</a></li>
+                        <li><a href="supplies.html">Supplies</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li>
+                            <a href="aboutUs.html">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="ourMission.html">Our Mission</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+    
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var submenuItems = document.querySelectorAll('.desktop-menu .submenu');
+        
+                        submenuItems.forEach(function (item) {
+                            var parentItem = item.closest('li');
+        
+                            if (parentItem) {
+                                parentItem.addEventListener('mouseenter', function () {
+                                    item.classList.add('active');
+                                });
+        
+                                parentItem.addEventListener('mouseleave', function () {
+                                    item.classList.remove('active');
+                                });
+                            }
+                        });
+                    });
+                </script>
+            </nav>
+               
+            <nav class="mobile-menu">
+                <div class="menu-toggle" id="mobile-menu">
+                  <div class="btn15" data-menu="15">
+                    <div class="icon">
+                    </div>
+                  </div>  
+                  <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenu = document.getElementById("mobile-menu");
+        var mainMenu = document.querySelector(".menu");
+    
+        mobileMenu.addEventListener("click", function () {
+            mainMenu.classList.toggle("active");
+        });
+    });
+            </script>
+                <!--6/5/2024 NWong MOD 32L: modify the mobile navigation to fit with our sitemap, move our logo to the top-->
+             <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="patterns.html">Patterns</a>
+                    <ul class="submenu">
+                        <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                        <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                        <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                        <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                        <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                        <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                        <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                    <ul class="submenu">
+                        <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                        <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                        <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="customOrders.html">Custom Orders</a></li>
+                <li><a href="supplies.html">Supplies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="ourMission.html">Our Mission</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+       
+   
+</header>
+
+
+  
+<!-- Thumbnail -->
+<section id="thumbnailabout">
+    <div id="img-overlay"></div>
+    </section>
+    <h2 id="title" class="h2white">Products</h2>
+    <script>
+       var imageUrls = [
+        "Assets/pics/crochet1.jpg",
+        "Assets/pics/crochet2.jpg"
+    ];
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        var thumbnailAbout = document.getElementById("thumbnailabout");
+    
+        function setRandomBackgroundImage() {
+            var randomIndex = Math.floor(Math.random() * imageUrls.length);
+            var randomImageUrl = imageUrls[randomIndex];
+            thumbnailAbout.style.backgroundImage = "url('" + randomImageUrl + "')";
+        }
+    
+        setRandomBackgroundImage(); // Set the background image on page load
+    
+        // Change the background image every 5 seconds
+        setInterval(setRandomBackgroundImage, 5000);
+    });
+    
+    
+    </script>
+
+        <div class="breadcrumb">
+            <a href="home.html">Home / </a>
+            <a href="patterns.html">Patterns</a>
+        </div>
+        
+
+ <!-- ------------------------------Shop By Category----------------------------------- -->
+            <h2 style="text-align: center;">Shop By Category:</h2>
+            <br>
+
+        
+            <div class="shopbycategory-row">
+                <div class="shopbycategory-column" style="background-color:#fadde1;">
+                    <div class="best-seller">
+                    <img src="Assets/pics/clothes/sweaters/swiftcardigan.jpg" alt=" Beginner Friendly Mushroom case for Airpods">
+                
+                    <h2>Clothing</h2>
+                    <button class="buttonh" onclick="window.location.href='productssubm/clothingProducts.html'">Shop Now!</button>
+                </div>
+                </div>
+
+                <div class="shopbycategory-column" style="background-color:#ffcad4;">
+                    <div class="best-seller">
+                        <img src="Assets/pics/patterns/Amigurumi/noface.jpeg" alt=" Beginner Friendly Mushroom case for Airpods">
+                        <h2>Amugrumi</h2>
+                        <button class="buttonh" onclick="window.location.href='productssubm/amigurumiProducts.html'">Shop Now!</button>
+                    </div>
+                </div>
+
+                <div class="shopbycategory-column" style="background-color:#fadde1;">
+                    <div class="best-seller">
+                        <img src="Assets/pics/patterns/Amigurumi/bunnyonsieadv.jpeg" alt=" Chopper ">
+                        <h2>Patterns</h2>
+                        <button class="buttonh" onclick="window.location.href='patternsProducts.html'">Shop Now!</button>
+                    </div>
+                </div>
+        </div>
+
+<!-- Shop All Section -->
+<div class="center">
+    <div id="center-best-sellers">
+        <br><br><br><br><br><br>
+        <h2 class="slide-up"> Shop All: </h2>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var elements = document.querySelectorAll(".slide-up");
+
+        function fadeInOnScroll() {
+            elements.forEach(function (element) {
+                var scrollPosition = window.scrollY;
+                var elementOffsetTop = element.offsetTop;
+                var windowHeight = window.innerHeight;
+
+                if (scrollPosition > elementOffsetTop - windowHeight / 2) {
+                    element.classList.add("active");
+                }
+            });
+        }
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", fadeInOnScroll);
+
+        // Trigger the animation on page load
+        fadeInOnScroll();
+    });
+</script>
+<section id="product-section">
+    
+    <!-- Products -->
+    
+    <section id="product-section">
+    
+        <div class="product">
+            <img src="Assets/pics/patterns/Amigurumi/Flowerpat.jpg" alt=" flower">
+            <p style="text-align: left;">
+                Brighten up any room with our Crochet Flower Bouquet! 
+                This delightful bouquet features a charming assortment of crochet flowers, perfect for adding a touch of 
+                beauty and color to your space.<span id="dots3">...</span><span id="more3"><br><br>
+        
+                    With a variety of blooms including roses, daisies, and tulips, this pattern makes for a great gift.
+                    Our Crochet Flower Bouquet Pattern is sure to bring joy and warmth wherever it blooms!
+               
+            </span><a class="buttonb" onclick="myFunction3()" id="myBtn3">Read more</a></p>
+        
+            <script>
+                function myFunction3() {
+                    var dots3 = document.getElementById("dots3");
+                    var moreText3 = document.getElementById("more3");
+                    var btnText3 = document.getElementById("myBtn3");
+                  
+                    if (dots3.style.display === "none") {
+                        dots3.style.display = "inline";
+                        btnText3.innerHTML = "Read more"; 
+                        moreText3.style.display = "none";
+                    } else {
+                        dots3.style.display = "none";
+                        btnText3.innerHTML = "Read less"; 
+                        moreText3.style.display = "inline";
+                    }
+                }
+            </script>
+                    <h3> $70.00 </h3>
+                    <h4> Crochet Flower Bouquet </h4>
+                    <button class="buttonh shopNowBtn" data-name="Crochet Flower Bouquet" data-price="70.00">Shop Now</button>
+        </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/chopper.JPG" alt="Chopper">
+                <p style="text-align: left;">
+                    Introducing our handmade Chopper Amigurumi, a delightful rendition of the beloved character from the iconic anime One Piece.
+                     Crafted with love and attention to detail, this adorable Chopper brings a touch of whimsy and adventure into your home. 
+                     With his signature red hat and lovable
+                    <span id="dots1">...</span><span id="more1" style="display: none;">
+        
+                        expression, he's sure to bring a smile to the face of any fan. Whether you're a seasoned collector or new to the world
+                        of amigurumi, our Chopper is the perfect companion for your anime-inspired adventures. Join Chopper on his next journey
+                         and add this handmade treasure to your collection today!
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3><s style="color:gray">100.00</s><br> $70.00 </h3>
+                        <h4>Handmade Chopper from One Piece Season One </h4>
+                        <button class="buttonh shopNowBtn" data-name="Handmade Chopper from One Piece Season One" data-price="70.00">Shop Now</button>
+        
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/poro.jpg" alt="Poro - Intermediate">
+                <p style="text-align: left;">
+                    Enter the enchanting world of Piltover with our Handmade Amigurumi Poro from Arcane, inspired by the beloved League of Legends 
+                    series. Crafted with love and attention to detail, each Poro is a unique creation, capturing the whimsy and charm of 
+                    these adorable creatures. <span id="dots1">...</span><span id="more1" style="display: none;">
+        
+                        Whether you're a die-hard fan of the series or simply adore cute and cuddly companions, our handmade Poros are the 
+                        perfect addition to your collection. With their fluffy bodies and expressive eyes, they're sure to bring a touch of
+                        magic to your home. Embrace the wonder of Piltover and adopt your own Handmade Amigurumi Poro from Arcane today!
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3><s style="color:gray">100.00</s><br> $75.50 </h3>
+                        <h4>Handmade Amigurumi Poro from Arcane</h4>
+                        <button class="buttonh shopNowBtn" data-name="Handmade Amigurumi Poro from Arcane" data-price="100.00">Shop Now</button>
+        
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/bee.jpeg" alt="Bee">
+                <p style="text-align: left;">
+                    Saddle up and ride into the wild west with our Handmade Amigurumi Cowboy Bee! This adorable little critter is
+                     ready to wrangle up some fun with its cowboy hat, bandana, and spiffy boots. Crafted with love and attention
+                      to detail, each cowboy bee is a unique creation,<span id="dots2">...</span><span id="more2"> 
+        
+                        perfect for adding a touch of whimsy to your home or gifting to a fellow bee enthusiast. Whether you're a 
+                        fan of the old west or just love cute and quirky characters, our Cowboy Bee is sure to bring a smile to your face. 
+                        So round 'em up and bring home your very own Cowboy Bee today!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $35.00  </h3>
+                <h4>Handmade Amigurumi Cowboy Bee </h4>
+                <button class="buttonh shopNowBtn" data-name="Handmade Amigurumi Cowboy Bee" data-price="35.00">Shop Now</button>
+            </div>
+         
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/cow.jpeg" alt="Crocheted cow ">
+                <p style="text-align: left;">ndulge in the sweetness of our Crochet Strawberry Cow Pattern, a delightful 
+                    Indulge in the cuteness of our Handmade Amigurumi Strawberry Cow, a charming addition to any collection! 
+                    Crafted with love and attention to detail, each strawberry cow is lovingly crocheted to perfection, featuring
+                     a delightful combination of pink and white hues with<span id="dots1">...</span><span id="more1" style="display: none;">
+    
+                    cute little strawberry spots. This adorable plushie is the perfect companion for kids and adults alike, bringing a 
+                    touch of whimsy and sweetness to any space. Whether displayed on a shelf or hugged tightly, our Handmade Amigurumi 
+                    Strawberry Cow is sure to bring smiles and joy wherever it goes!
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3> $65.00 </h3>
+                        <h4> Handmade Amigurumi Strawberry Cow </h4>
+                        <button class="buttonh shopNowBtn" data-name="Handmade Amigurumi Strawberry Cow " data-price="65.00">Shop Now</button>
+        
+            </div>
+        
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/bunny.jpeg" alt="Bunny">
+                <p style="text-align: left;">
+                    Meet our adorable Handmade Amigurumi Bunny in Overalls, the perfect companion for anyone seeking a touch of charm and whimsy! 
+                    Lovingly crafted with soft yarn and attention to detail, this bunny is as cute as can be, wearing its sweet little overalls. 
+                    <span id="dots2">...</span><span id="more2">
+                        
+                        Whether you're a collector of amigurumi or simply looking for a special gift, this bunny is sure to bring joy to all who
+                         meet it. With its floppy ears and endearing expression, it's ready to hop into your heart and become your new favorite
+                          cuddle buddy. Bring home a piece of handmade magic with our Handmade Amigurumi Bunny in Overalls today!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $80.00 </h3>
+                <h4> Handmade Amigurumi Bunny in Overalls </h4>
+                <button class="buttonh shopNowBtn" data-name="Handmade Amigurumi Bunny in Overalls" data-price="80.00">Shop Now</button>
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/duck2inter.jpeg" alt="Duck with frog Bucket hat">
+                <p style="text-align: left;">
+                    Add a touch of whimsy to your life with our Handmade Amigurumi Duck with 
+                    Frog Bucket Hat! Each duck is lovingly crafted with soft yarn and intricate stitching to 
+                    capture its adorable features, from its round body to its sweet little beak.
+                    <span id="dots2">...</span><span id="more2">
+                        
+                        And what makes it even more special? The duck sports a trendy frog bucket hat, adding an
+                         extra layer of quirky charm. Whether displayed on your shelf or given as a unique gift,
+                          our Handmade Amigurumi Duck with Frog Bucket Hat is sure to bring smiles and delight to
+                           anyone who sees it!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $59.99 </h3>
+                <h4> Handmade Amigurumi Duck with Frog Bucket Hat </h4>
+                <button class="buttonh shopNowBtn" data-name="Handmade Amigurumi Duck with Frog Bucket Hat" data-price="59.99">Shop Now</button>
+            </div>
+        
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/bunnyonsieadv.jpeg" alt="Bunny Advanced">
+                <p style="text-align: left;">
+                    Meet our adorable Handmade Amigurumi Bunny in a Onesie, the perfect cuddly companion for kids and kids at heart! Lovingly crafted with soft 
+                    yarn and attention to detail, this sweet bunny is dressed in a cozy onesie, adding an extra level of charm to its already irresistible cuteness.
+                    <span id="dots2">...</span><span id="more2">
+                        
+                        Whether you're looking for a unique gift or a charming addition to your own collection, our Handmade Amigurumi Bunny in a Onesie is sure to bring 
+                        joy and smiles wherever it goes. Snuggle up with this lovable bunny and let its charm brighten your day!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $80.00 </h3>
+                <h4> Handmade Amigurumi Bunny in Onesie </h4>
+                <button class="buttonh shopNowBtn" data-name="Handmade Amigurumi Bunny in Onesie" data-price="80.00">Shop Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/noface.jpeg" alt="No Face">
+                <p style="text-align: left;">
+                    Step into the enchanting world of Spirited Away with our Handmade No-Face Amigurumi. Crafted with love and attention to detail, 
+                    this adorable plush captures the mysterious charm of the iconic character. 
+                    <span id="dots2">...</span><span id="more2">
+                        
+                        With his signature mask and dark cloak, our No-Face Amigurumi is ready to bring a touch of magic to your home. Whether you're
+                         a die-hard Studio Ghibli fan or simply appreciate the art of handmade creations, this little companion is sure to delight and inspire.
+                          Embrace the whimsy of Spirited Away and add our Handmade No-Face Amigurumi to your collection today!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $120.00 </h3>
+                <h4>Handmade No-Face Amigurumi </h4>
+                <button class="buttonh shopNowBtn" data-name="Handmade No-Face Amigurumi" data-price="120.00">Shop Now</button>
+            </div>
+        
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/pochitaadv.jpeg" alt="Pochita">
+                <p style="text-align: left;">
+                    Introducing our Handmade Amigurumi Pochita from Chainsaw Man, the lovable and loyal devil companion brought to life in 
+                    crochet form! Each Pochita is meticulously crafted with care and attention to detail, capturing all the charm and personality of this
+                    <span id="dots2">...</span><span id="more2">
+                        
+                        beloved character. With his floppy ears and endearing expression, Pochita is sure to steal your heart and become a cherished addition
+                         to your collection. Whether you're a fan of the manga series or simply love cute and quirky amigurumi, our Handmade Pochita is the perfect
+                          companion to bring a touch of devilish delight to your home!
+                
+                    </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $90.00 </h3>
+                <h4> Handmade Amigurumi Pochita from Chainsaw Man</h4>
+                <button class="buttonh shopNowBtn" data-name="Handmade Amigurumi Pochita from Chainsaw Man" data-price="90.00">Shop Now</button>
+            </div>
+        
+        <div class="product">
+            <img src="Assets/pics/patterns/clothes/checkardsweater.jpg" alt=" checkardsweater advanced">
+            <p style="text-align: left;">
+                Elevate your wardrobe with our Crochet Checkered Sweater Pattern, designed for advanced-level crocheters!
+                 This stylish pattern features a classic checkered design that adds a touch of sophistication to your wardrobe. 
+                 With its intricate stitches and detailed instructions,<span id="dots3">...</span><span id="more3"><br><br>
+        
+                this project offers a satisfying challenge for those looking to expand their crochet skills. Create your own cozy
+                 sweater, perfect for chilly days and stylish outings. Whether you're crafting for yourself or making a thoughtful
+                  gift for a loved one, our Crochet Checkered Sweater Pattern is sure to impress with its timeless appeal.
+               
+            </span><a class="buttonb" onclick="myFunction3()" id="myBtn3">Read more</a></p>
+        
+            <script>
+                function myFunction3() {
+                    var dots3 = document.getElementById("dots3");
+                    var moreText3 = document.getElementById("more3");
+                    var btnText3 = document.getElementById("myBtn3");
+                  
+                    if (dots3.style.display === "none") {
+                        dots3.style.display = "inline";
+                        btnText3.innerHTML = "Read more"; 
+                        moreText3.style.display = "none";
+                    } else {
+                        dots3.style.display = "none";
+                        btnText3.innerHTML = "Read less"; 
+                        moreText3.style.display = "inline";
+                    }
+                }
+            </script>
+                    <h3> $12.50 </h3>
+                    <h4> Crochet Checkered Sweater Pattern - Advanced Level </h4>
+                    <button class="buttonh shopNowBtn" data-name="Crochet Checkered Sweater Pattern" data-price="12.50">Shop Now</button>
+        </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/clothes/doggyhat.jpg" alt="Hat for doggy - beginner">
+                <p style="text-align: left;">
+                    Treat your furry friend to some style with our Crochet Dog Hat Pattern, designed for beginner-level crocheters! 
+                    This adorable pattern allows you to create a cozy and stylish hat for your canine companion, 
+                    <span id="dots1">...</span><span id="more1" style="display: none;"><br><br>
+        
+                        perfect for adding a touch of warmth and flair to their adventures. While it requires some beginner-level skills,
+                         the end result is sure to be worth it. With detailed instructions and clear diagrams, you'll be able to crochet a hat
+                          that fits your dog perfectly and keeps them looking cute all year round. Whether you're crafting for your own pup or
+                           making a gift for a friend, our Crochet Dog Hat Pattern is sure to make tails wag with joy!
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3><s style="color:gray">$7.00</s><br> $6.50 </h3>
+                        <h4>Crochet Dog Hat Pattern - Beginner Level </h4>
+                        <button class="buttonh shopNowBtn" data-name="Crochet Dog Hat Pattern" data-price="6.50">Shop Now</button>
+        
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/clothes/pompompurinhat.jpg" alt="pom pom purin hat - Intermediate">
+                <p style="text-align: left;">
+                    Add a touch of kawaii charm to your wardrobe with our Crochet Pom Pom Purin Bucket Hat Pattern, 
+                    designed for intermediate-level crocheters! This adorable pattern features Pom Pom Purin, the 
+                    beloved Sanrio character, on a trendy bucket hat, perfect for adding a pop <span id="dots1">...</span><span id="more1" style="display: none;"><br><br>
+        
+                    of cuteness to any outfit. While it requires some intermediate-level techniques, including color changes and shaping, the end result is sure
+                     to be both stylish and adorable. With clear instructions and helpful tips, you'll be able to crochet your own Pom Pom Purin bucket hat in no time. 
+                     Whether you're wearing it yourself or giving it as a gift to a fellow Sanrio fan, our Crochet Pom Pom Purin Bucket Hat Pattern is sure to delight!
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3><s style="color:gray">10.00</s><br> $6.50 </h3>
+                        <h4>Crochet Pom Pom Purin Bucket Hat Pattern - Intermediate Level </h4>
+                        <button class="buttonh shopNowBtn" data-name="Crochet Pom Pom Purin Bucket Hat Pattern" data-price="10.00">Shop Now</button>
+        
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/clothes/shirt1.jpg" alt="shirt beginner">
+                <p style="text-align: left;">
+                    Elevate your crochet skills with our Crochet Crop Top Shirt Pattern, designed for beginner-level crocheters! 
+                    This stylish pattern features a chic and trendy crop top shirt, perfect for adding a touch of handmade flair 
+                    to your wardrobe. With intricate lacework and complex stitch patterns,<span id="dots2">...</span><span id="more2"> 
+        
+                        this project is sure to challenge and inspire you. Create your own fashion-forward masterpiece with detailed instructions 
+                        and expert guidance. Whether you're wearing it yourself or gifting it to a fashion-savvy friend, our Crochet Crop Top Shirt
+                        Pattern is sure to turn heads and make a statement!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $9.00  </h3>
+                <h4> Crochet Crop Top Shirt Pattern - beginner Level</h4>
+                <button class="buttonh shopNowBtn" data-name=" Crochet Crop Top Shirt Pattern" data-price="9.00">Shop Now</button>
+            </div>
+        
+        <div class="product">
+            <img src="Assets/pics/patterns/Amigurumi/Flowerpat.jpg" alt=" flower intermediate">
+            <p style="text-align: left;">
+                Brighten up any room with our Crochet Flower Bouquet Pattern, designed for intermediate-level crocheters! 
+                This delightful pattern features a charming assortment of crochet flowers, perfect for adding a touch of 
+                beauty and color to your space.<span id="dots3">...</span><span id="more3"><br><br>
+        
+                    With a variety of blooms including roses, daisies, and tulips, this pattern offers a fun and rewarding
+                    challenge for crocheters looking to expand their skills. Whether you're creating a centerpiece for your
+                    table or a cheerful decoration for your home, our Crochet Flower Bouquet Pattern is sure to bring joy 
+                    and warmth wherever it blooms!
+               
+            </span><a class="buttonb" onclick="myFunction3()" id="myBtn3">Read more</a></p>
+        
+            <script>
+                function myFunction3() {
+                    var dots3 = document.getElementById("dots3");
+                    var moreText3 = document.getElementById("more3");
+                    var btnText3 = document.getElementById("myBtn3");
+                  
+                    if (dots3.style.display === "none") {
+                        dots3.style.display = "inline";
+                        btnText3.innerHTML = "Read more"; 
+                        moreText3.style.display = "none";
+                    } else {
+                        dots3.style.display = "none";
+                        btnText3.innerHTML = "Read less"; 
+                        moreText3.style.display = "inline";
+                    }
+                }
+            </script>
+                    <h3> $7.00 </h3>
+                    <h4> Crochet Flower Bouquet Pattern - Intermediate Level </h4>
+                    <button class="buttonh shopNowBtn" data-name="Crochet Flower Bouquet Pattern" data-price="7.00">Shop Now</button>
+        </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/chopper.JPG" alt="Chopper - Intermediate">
+                <p style="text-align: left;">Create a heartfelt gift or add a touch of charm to any project with this versatile crochet flower pattern. Perfect for everyone,
+                     from moms to significant others, this pattern is simple yet elegant, making it suitable for any skill level.<span id="dots1">...</span><span id="more1" style="display: none;"><br><br>
+        
+                    With just a few basic stitches, you can craft a beautiful blossom that can be used to embellish 
+                    clothing, accessories, home decor, and more. Whether you're a seasoned crocheter or just starting out, 
+                    this pattern is sure to bring joy to anyone who receives it.
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3><s style="color:gray">10.00</s><br> $6.50 </h3>
+                        <h4>Chopper from One Piece Season One Pattern - Intermediate & CUTE </h4>
+                        <button class="buttonh shopNowBtn" data-name="Chopper from One Piece Season One Pattern" data-price="6.50">Shop Now</button>
+        
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/poro.jpg" alt="Poro - Intermediate">
+                <p style="text-align: left;">
+                    Step into the enchanting world of Runeterra with our Crochet Poro Pattern, inspired by the adorable creatures from Arcane: League of Legends. 
+                    Perfect for intermediate-level crocheters, <span id="dots1">...</span><span id="more1" style="display: none;"><br><br>
+        
+                        this pattern allows you to create your own cuddly Poro companion, complete with its iconic round body and fluffy demeanor. While it may 
+                        require some intermediate-level skills, the end result is a charming masterpiece that captures the spirit of these beloved creatures. 
+                        Whether you're displaying it proudly on your shelf or gifting it to a fellow League of Legends fan, our Crochet Poro Pattern is sure 
+                        to bring smiles and warmth to all who encounter it!
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3><s style="color:gray">10.00</s><br> $6.50 </h3>
+                        <h4>Crochet Poro from Arcaine League of Legends Pattern - Intermediate Level </h4>
+                        <button class="buttonh shopNowBtn" data-name="Crochet Poro from Arcaine League of Legends Pattern" data-price="6.50">Shop Now</button>
+        
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/bee.jpeg" alt="Bee Beginner">
+                <p style="text-align: left;">
+                    Introducing our delightful Bee Crochet Pattern, a charming project that's perfect for beginners! 
+                    With simple stitches and clear instructions, this pattern is an ideal starting point for those 
+                    new to crochet.  <span id="dots2">...</span><span id="more2"> 
+        
+                    Create your own adorable bee with ease, from its fuzzy yellow body to its cute little stripes 
+                    and wings. Whether you're looking for a fun introduction to crochet or a quick and satisfying 
+                    project, our Bee Crochet Pattern is sure to bring a smile to your face as you stitch up your 
+                    very own buzzing friend!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $5.00  </h3>
+                <h4> Bee Crochet Pattern Perfect for Beginners </h4>
+                <button class="buttonh shopNowBtn" data-name="Bee Crochet Pattern" data-price="5.00">Shop Now</button>
+            </div>
+         
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/cow.jpeg" alt="Crocheted cow intermediate ">
+                <p style="text-align: left;">ndulge in the sweetness of our Crochet Strawberry Cow Pattern, a delightful 
+                    project that's as charming as it is adorable! While this pattern is more suited for intermediate crocheters
+                     due to its slightly more complex techniques, the end result is absolutely worth it. 
+                     Stitch up<span id="dots1">...</span><span id="more1" style="display: none;"><br><br>
+        
+                        your very own strawberry cow, complete with its signature pink spots and leafy green stem, for a whimsical
+                         addition to your crochet collection. Whether you're challenging yourself with new skills or simply craving
+                          something irresistibly cute to crochet, our Strawberry Cow Pattern is sure to make you smile with its
+                           berry-licious charm.
+                    
+                </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+        
+                
+                <script>
+                    function myFunction1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+                      
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read more"; 
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read less"; 
+                            moreText1.style.display = "inline";
+                        }
+                    }
+                </script>
+                        <h3> $8.00 </h3>
+                        <h4> Crochet Strawberry Cow Pattern - Adorable Intermediate Project </h4>
+                        <button class="buttonh shopNowBtn" data-name="Crochet Strawberry Cow Pattern" data-price="8.00">Shop Now</button>    
+            </div>
+        
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/bunny.jpeg" alt="Bunny intermediate">
+                <p style="text-align: left;">Get ready to crochet up some cuteness with our Crochet Bunny with Overalls Pattern, 
+                    designed for intermediate level crocheters! <span id="dots2">...</span><span id="more2">
+                        
+                    This charming pattern features an adorable bunny wearing sweet little overalls, adding a touch of whimsy
+                     to your crochet collection. While it may require some intermediate-level skills, the end result is sure to 
+                     be worth it. With detailed instructions and clear diagrams, you'll be able to create your own darling bunny
+                      in no time. Perfect for gifting or keeping as a charming decoration, our Crochet Bunny with Overalls Pattern
+                       is sure to bring joy to your crocheting adventures!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $8.00 </h3>
+                <h4> Crochet Bunny with Overalls Pattern - Intermediate Level </h4>
+                <button class="buttonh shopNowBtn" data-name="Crochet Bunny with Overalls Pattern" data-price="8.00">Shop Now</button>
+            </div>
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/duck2inter.jpeg" alt="Duck with frog Bucket hat - Intermediate">
+                <p style="text-align: left;">
+                    Take your crochet skills to the next level with our Crochet Duck with Frog Bucket Hat Pattern, perfect for intermediate-level crocheters! 
+                    This charming pattern features a lovable
+                    <span id="dots2">...</span><span id="more2">
+                        
+                        duck sporting a trendy frog bucket hat, adding a touch of whimsical style to your crochet creations. While it may require some 
+                        intermediate-level techniques, the end result is sure to be a delightful masterpiece. With detailed instructions and helpful tips, 
+                        you'll be able to create your own adorable duck with its fashionable frog hat in no time. Whether you're crocheting for yourself or 
+                        gifting to a friend, our Crochet Duck with Frog Bucket Hat Pattern is sure to make a splash!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $8.50 </h3>
+                <h4> Crochet Duck with Frog Bucket Hat Pattern - Intermediate Level </h4>
+                <button class="buttonh shopNowBtn" data-name="Crochet Duck with Frog Bucket Hat Pattern" data-price="8.50">Shop Now</button>
+            </div>
+        
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/bunnyonsieadv.jpeg" alt="Bunny Advanced">
+                <p style="text-align: left;">
+                    Embark on a crochet adventure with our Crochet Bunny in Onesie Pattern, designed for advanced-level crocheters!
+                     This intricate pattern features an adorable bunny snugly dressed in a cozy onesie,
+                    <span id="dots2">...</span><span id="more2">
+                        
+                        adding a touch of whimsy and charm to your crochet creations. While it may pose a challenge with its advanced 
+                        techniques, the end result is a stunning masterpiece that will surely impress. With detailed instructions and 
+                        step-by-step guides, you'll be able to bring this darling bunny to life, complete with its adorable onesie. Perfect 
+                        for showcasing your crochet skills or gifting to a fellow enthusiast, our Crochet Bunny in Onesie Pattern is sure to 
+                        be a cherished addition to any collection.
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $10.00 </h3>
+                <h4> Crochet Bunny in Onesie Pattern - Advanced Level </h4>
+                <button class="buttonh shopNowBtn" data-name="Crochet Bunny in Onesie Pattern" data-price="10.00">Shop Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/noface.jpeg" alt="No Face - Advanced">
+                <p style="text-align: left;">
+                    mbark on a magical crochet journey with our Crochet No-Face from Spirited Away Pattern, tailored for advanced-level crocheters! 
+                    This intricate pattern captures the enigmatic charm of No-Face, 
+                    <span id="dots2">...</span><span id="more2">
+                        
+                    character from Studio Ghibli's beloved film Spirited Away. With detailed instructions and complex techniques, you'll bring No-Face 
+                    to life, complete with his mysterious mask and flowing robe. While this pattern may pose a challenge, the end result is a stunning 
+                    masterpiece that captures the essence of this beloved character. Perfect for displaying as a work of art or gifting to a fellow Ghibli 
+                    fan, our Crochet No-Face Pattern is sure to enchant and inspire!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $12.00 </h3>
+                <h4> Crochet No-Face from Spirited Away Pattern - Advanced Level </h4>
+                <button class="buttonh shopNowBtn" data-name="Crochet No-Face from Spirited Away Pattern" data-price="12.00">Shop Now</button>
+            </div>
+        
+        
+            <div class="product">
+                <img src="Assets/pics/patterns/Amigurumi/pochitaadv.jpeg" alt="Pochita - Advanced">
+                <p style="text-align: left;">
+                    Prepare for a crochet challenge with our Crochet Pochita from Chainsaw Man Pattern, 
+                    designed for advanced-level crocheters! This intricate pattern brings to life Pochita, the lovable demon dog
+                    <span id="dots2">...</span><span id="more2">
+                        
+                    from the hit manga series Chainsaw Man. With complex techniques and attention to detail, you'll create a faithful
+                     crochet rendition of Pochita, complete with his signature chainsaw tail and mischievous grin. While this pattern 
+                     is advanced, the satisfaction of completing such a detailed project will be unmatched. Perfect for displaying as
+                    a work of art or gifting to a fellow fan, our Crochet Pochita Pattern is sure to impress and delight!
+        
+                </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+        
+                <script>
+                    function myFunction2() {
+                        var dots2 = document.getElementById("dots2");
+                        var moreText2 = document.getElementById("more2");
+                        var btnText2 = document.getElementById("myBtn2");
+                      
+                        if (dots2.style.display === "none") {
+                            dots2.style.display = "inline";
+                            btnText2.innerHTML = "Read more"; 
+                            moreText2.style.display = "none";
+                        } else {
+                            dots2.style.display = "none";
+                            btnText2.innerHTML = "Read less"; 
+                            moreText2.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3><br> $9.00 </h3>
+                <h4> Crochet Pochita from Chainsaw Man Pattern - Advanced Level</h4>
+                <button class="buttonh shopNowBtn" data-name="Crochet Pochita from Chainsaw Man Pattern" data-price="9.00">Shop Now</button>
+            </div>
+           
+    
+    <script>
+        // Retrieve the cart data from localStorage
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Display each item in the shopping cart
+        var cartItems = document.getElementById('cartItems');
+        cart.forEach(function(item) {
+            var listItem = document.createElement('li');
+            listItem.textContent = item.name + ' - $' + item.price.toFixed(2);
+            cartItems.appendChild(listItem);
+        });
+    </script>
+    
+    <script>
+        // Get all the "Shop Now" buttons
+        var shopNowButtons = document.querySelectorAll('.shopNowBtn');
+    
+        // Add event listener to each button
+        shopNowButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Get the product name and price from the button's data attributes
+                var productName = button.getAttribute('data-name');
+                var productPrice = parseFloat(button.getAttribute('data-price'));
+                
+                // Store the product data in localStorage
+                var cartItem = { name: productName, price: productPrice };
+                var cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(cartItem);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                
+                // Redirect to the cart.html page
+                window.location.href = 'cart.html';
+            });
+        });
+    </script>
+        </section>
+    
+
+     
+  
+    <!--footer-->
+    <footer><br>
+        <div class="navbar">
+                    <!--6/5/2024 NWong MOD 9L: modify footer links to match our sitemap-->
+                <a href="home.html">Home</a> 
+                <a href="patterns.html">Patterns</a>
+                <a href="products.html">Products</a> 
+                <a href="customOrders.html">Custom Orders</a> 
+                <a href="supplies.html">Supplies</a> 
+                <a href="workshops.html">Workshops</a> 
+                <a href="FAQ.html">FAQS</a> 
+                <a href="aboutUs.html">About Us</a> 
+                <a href="contact.html">Contact Us</a> 
+        </div><br>
+        The site best viewed in Firefox or Chrome<br>
+                <!--6/5/2024 NWong MOD 2L: modify copyright and email to match out company-->
+           Twice As Nice Crochet Copyright &copy; 2024
+           <a href="mailto:twiceasnicecrochet@gmail.com">twiceasnicecrochet@gmail.com</a><br><br>
+           
+            <!--6/5/2024 NWong NEW 4L: add page last modified info to footer-->
+        <script type = "text/javascript">
+            var modDate = new Date( document.lastModified );
+            document.write ( "This page was last modified " + modDate.toLocaleString() );
+        </script>
+    </footer>
+</body>
+</html>

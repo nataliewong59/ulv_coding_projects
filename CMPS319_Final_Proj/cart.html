@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Coded by" content="Natalie Vidarte Alvarado">
+
+    <meta name="keywords" content="Twice as Nice, crochet, beginner-level, beginner, beginners, intermediate-level, intermediate Patterns, advanced-level, supplies, must haves.">
+
+    <meta name="description" content="Wan't to keep check on the items you've added to cart? Not to worry, in this page we have recorded each time you click 'Shop Now', 
+    changed your mind about a certain item? We have a button that will take it off your cart">
+
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #shoppingCart {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    #cartItems {
+        list-style-type: none;
+        padding: 0;
+    }
+    #cartItems li {
+        margin-bottom: 10px;
+    }
+    #totalPrice {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    #proceedToCheckout {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff9fff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        #proceedToCheckout:hover {
+            background-color: #facffa;
+        }
+
+        .remove-btn {
+        font-size: 14px; /* Adjust the font size as needed */
+        padding: 2px 6px; /* Adjust the padding as needed */
+        border: none;
+        height: 20px;
+        border-radius: 6%;;
+        width: 20px;
+        background-color: transparent;
+        color: #999;
+        cursor: pointer;
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+     
+<!--Navigation-->
+    <!--6/5/2024 NWong MOD 37L: modify the desktop navigation to fit with our sitemap, move our logo to the top-->
+    <div id="wrapper">
+        <header class="header">
+            <nav class="desktop-menu">
+                <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="patterns.html">Patterns</a>
+                            <ul class="submenu">
+                                <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                                <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                                <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                                <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                                <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                                <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                                <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                            <ul class="submenu">
+                                <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                                <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                                <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="customOrders.html">Custom Orders</a></li>
+                        <li><a href="supplies.html">Supplies</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li>
+                            <a href="aboutUs.html">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="ourMission.html">Our Mission</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+    
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var submenuItems = document.querySelectorAll('.desktop-menu .submenu');
+        
+                        submenuItems.forEach(function (item) {
+                            var parentItem = item.closest('li');
+        
+                            if (parentItem) {
+                                parentItem.addEventListener('mouseenter', function () {
+                                    item.classList.add('active');
+                                });
+        
+                                parentItem.addEventListener('mouseleave', function () {
+                                    item.classList.remove('active');
+                                });
+                            }
+                        });
+                    });
+                </script>
+            </nav>
+               
+            <nav class="mobile-menu">
+                <div class="menu-toggle" id="mobile-menu">
+                  <div class="btn15" data-menu="15">
+                    <div class="icon">
+                    </div>
+                  </div>  
+                  <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenu = document.getElementById("mobile-menu");
+        var mainMenu = document.querySelector(".menu");
+    
+        mobileMenu.addEventListener("click", function () {
+            mainMenu.classList.toggle("active");
+        });
+    });
+            </script>
+                <!--6/5/2024 NWong MOD 32L: modify the mobile navigation to fit with our sitemap, move our logo to the top-->
+             <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="patterns.html">Patterns</a>
+                    <ul class="submenu">
+                        <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                        <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                        <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                        <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                        <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                        <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                        <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                    <ul class="submenu">
+                        <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                        <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                        <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="customOrders.html">Custom Orders</a></li>
+                <li><a href="supplies.html">Supplies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="ourMission.html">Our Mission</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+   
+</header>
+
+
+  
+<!-- Thumbnail -->
+<section id="thumbnailabout"></section>
+
+<div id="img-overlay">
+    <h2 id="title" class="h2white">Shopping Cart</h2>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var imgOverlay = document.getElementById("img-overlay");
+
+        function slideUpOnScroll() {
+            var bounding = imgOverlay.getBoundingClientRect();
+
+            if (
+                bounding.top >= 0 &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            ) {
+                imgOverlay.classList.add("active");
+            }
+        }
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", slideUpOnScroll);
+
+        // Trigger the animation on page load
+        slideUpOnScroll();
+    });
+</script>
+
+        <div class="breadcrumb">
+            <a href="home.html">Home / </a>
+            <a href="cart.html">Cart</a>
+        </div>
+        
+
+ <!-- ------------------------------Shop By Category----------------------------------- -->
+                    <div id="shoppingCart">
+                        <h2>Shopping Cart</h2>
+                        <ul id="cartItems">
+                            <!-- Cart items will be displayed here -->
+                        </ul>
+                        <p id="totalPrice">Total Price: $<span id="totalAmount">0.00</span></p>
+                        <button id="proceedToCheckout">Proceed to Checkout</button>
+                    </div>
+
+   <script>
+    // Retrieve the cart data from localStorage
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Display each item in the shopping cart
+    var cartItems = document.getElementById('cartItems');
+    var totalPrice = 0;
+
+    cart.forEach(function(item, index) {
+        var listItem = document.createElement('li');
+        listItem.className = 'cart-item'; // Add a class for styling
+        listItem.textContent = item.name + ' - $' + item.price.toFixed(2);
+        
+        // Create a button to remove the item
+        var removeBtn = document.createElement('button');
+        removeBtn.textContent = 'X';
+        removeBtn.className = 'remove-btn'; // Add the class for styling
+        removeBtn.addEventListener('click', function() {
+            // Remove the item from the cart array
+            cart.splice(index, 1);
+            // Update the localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            // Update the display
+            updateCartDisplay();
+        });
+        
+        // Append the button to the list item
+        listItem.appendChild(removeBtn);
+
+        // Append the list item to the cart
+        cartItems.appendChild(listItem);
+
+        // Add the price to the total
+        totalPrice += item.price;
+    });
+
+    // Update the total price
+    var totalAmount = document.getElementById('totalAmount');
+    totalAmount.textContent = totalPrice.toFixed(2);
+
+    // Store the total price in localStorage
+    localStorage.setItem('totalPrice', totalPrice.toFixed(2));
+
+    // Add event listener for the Proceed to Checkout button
+    var proceedToCheckoutBtn = document.getElementById('proceedToCheckout');
+    proceedToCheckoutBtn.addEventListener('click', function() {
+        // Redirect to checkout page
+        window.location.href = 'checkout.html';
+    });
+
+    // Function to update the cart display
+    function updateCartDisplay() {
+        // Clear the existing cart items
+        cartItems.innerHTML = '';
+        totalPrice = 0;
+        // Display each item in the updated shopping cart
+        cart.forEach(function(item, index) {
+            var listItem = document.createElement('li');
+            listItem.className = 'cart-item'; // Add a class for styling
+            listItem.textContent = item.name + ' - $' + item.price.toFixed(2);
+            
+            // Create a button to remove the item
+            var removeBtn = document.createElement('button');
+            removeBtn.textContent = 'X';
+            removeBtn.className = 'remove-btn'; // Add the class for styling
+            removeBtn.addEventListener('click', function() {
+                // Remove the item from the cart array
+                cart.splice(index, 1);
+                // Update the localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+                // Update the display
+                updateCartDisplay();
+            });
+            
+            // Append the button to the list item
+            listItem.appendChild(removeBtn);
+
+            // Append the list item to the cart
+            cartItems.appendChild(listItem);
+
+            // Add the price to the total
+            totalPrice += item.price;
+        });
+
+        // Update the total price
+        totalAmount.textContent = totalPrice.toFixed(2);
+
+        // Store the updated total price in localStorage
+        localStorage.setItem('totalPrice', totalPrice.toFixed(2));
+    }
+</script>
+
+
+    <!--footer-->
+    <footer><br>
+        <div class="navbar">
+                    <!--6/5/2024 NWong MOD 9L: modify footer links to match our sitemap-->
+                <a href="home.html">Home</a> 
+                <a href="patterns.html">Patterns</a>
+                <a href="products.html">Products</a> 
+                <a href="customOrders.html">Custom Orders</a> 
+                <a href="supplies.html">Supplies</a> 
+                <a href="workshops.html">Workshops</a> 
+                <a href="FAQ.html">FAQS</a> 
+                <a href="aboutUs.html">About Us</a> 
+                <a href="contact.html">Contact Us</a> 
+        </div><br>
+        The site best viewed in Firefox or Chrome<br>
+                <!--6/5/2024 NWong MOD 2L: modify copyright and email to match out company-->
+           Twice As Nice Crochet Copyright &copy; 2024
+           <a href="mailto:twiceasnicecrochet@gmail.com">twiceasnicecrochet@gmail.com</a><br><br>
+           
+            <!--6/5/2024 NWong NEW 4L: add page last modified info to footer-->
+        <script type = "text/javascript">
+            var modDate = new Date( document.lastModified );
+            document.write ( "This page was last modified " + modDate.toLocaleString() );
+        </script>
+    </footer>
+</body>
+</html>

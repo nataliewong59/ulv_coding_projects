@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Coded by" content="Natalie Vidarte Alvarado & Natalie Wong">
+
+    <meta name="keywords" content="Twice as Nice, crochet, beginner-level, beginner, beginners, intermediate-level, intermediate Patterns, advanced-level, supplies, must haves.">
+
+    <meta name="description" content="Welcome to Twices As Nice Crochet, where creativity and coziness collide! Step into our world of yarn and stitches, where we offer a delightful array of crochet patterns suitable for everyone from beginners to seasoned pros.
+
+    At Twice As Nice Crochet, we believe that crafting should be fun and accessible to all. That's why we provide patterns ranging from beginner-friendly projects to more advanced designs, ensuring there's something for every skill level. Whether you're just
+     starting your crochet journey or looking for a new challenge, we've got you covered.">
+
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      
+<!--Navigation-->
+    <!--6/5/2024 NWong MOD 37L: modify the desktop navigation to fit with our sitemap, move our logo to the top-->
+    <div id="wrapper">
+        <header class="header">
+            <nav class="desktop-menu">
+                <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="patterns.html">Patterns</a>
+                            <ul class="submenu">
+                                <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                                <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                                <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                                <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                                <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                                <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                                <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                            <ul class="submenu">
+                                <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                                <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                                <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="customOrders.html">Custom Orders</a></li>
+                        <li><a href="supplies.html">Supplies</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li>
+                            <a href="aboutUs.html">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="ourMission.html">Our Mission</a></li><br>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+    
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var submenuItems = document.querySelectorAll('.desktop-menu .submenu');
+        
+                        submenuItems.forEach(function (item) {
+                            var parentItem = item.closest('li');
+        
+                            if (parentItem) {
+                                parentItem.addEventListener('mouseenter', function () {
+                                    item.classList.add('active');
+                                });
+        
+                                parentItem.addEventListener('mouseleave', function () {
+                                    item.classList.remove('active');
+                                });
+                            }
+                        });
+                    });
+                </script>
+            </nav>
+               
+            <nav class="mobile-menu">
+                <div class="menu-toggle" id="mobile-menu">
+                  <div class="btn15" data-menu="15">
+                    <div class="icon">
+                    </div>
+                  </div>  
+                  <img src="Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenu = document.getElementById("mobile-menu");
+        var mainMenu = document.querySelector(".menu");
+    
+        mobileMenu.addEventListener("click", function () {
+            mainMenu.classList.toggle("active");
+        });
+    });
+            </script>
+                <!--6/5/2024 NWong MOD 32L: modify the mobile navigation to fit with our sitemap, move our logo to the top-->
+             <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="patterns.html">Patterns</a>
+                    <ul class="submenu">
+                        <li><a href="patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                        <li><a href="patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                        <li><a href="patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                        <li><a href="patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                        <li><a href="patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                        <li><a href="patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                        <li><a href="patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                    <ul class="submenu">
+                        <li><a href="productssubm/clothingProducts.html">Clothing</a></li><br>
+                        <li><a href="productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                        <li><a href="productssubm/patternsProducts.html">Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="customOrders.html">Custom Orders</a></li>
+                <li><a href="supplies.html">Supplies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li>
+                    <a href="aboutUs.html">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="ourMission.html">Our Mission</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+<!-- Video Section -->
+<section id="video-section" id="video-overlay">
+    <video id="videoPlayer" autoplay muted>
+        
+        <source src="Assets/vids/crochetvid.mp4" type="video/mp4">
+        <source src="Assets/vids/yarn1.mp4" type="video/mp4">
+        <source src="Assets/vids/yarn2.mp4" type="video/mp4">
+        <source src="Assets/vids/yarn3.mp4" type="video/mp4">
+        <source src="Assets/vids/yarn4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="video-overlay" class="fade-in">
+        <h1><br>Twice As Nice Crochet</h1>
+    </div>
+</section>
+
+<script>
+    const videoPlayer = document.getElementById("videoPlayer");
+    const videos = [
+        "Assets/vids/crochetvid.mp4",
+        "Assets/vids/yarn1.mp4",
+        "Assets/vids/yarn2.mp4",
+        "Assets/vids/yarn3.mp4",
+        "Assets/vids/yarn4.mp4"
+    ];
+    let currentVideoIndex = 0;
+
+    videoPlayer.addEventListener("ended", playNextVideo);
+
+    function playNextVideo() {
+        console.log("Current video index:", currentVideoIndex);
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        console.log("Next video index:", currentVideoIndex);
+        videoPlayer.src = videos[currentVideoIndex];
+        videoPlayer.play();
+    }
+</script>
+
+
+
+    <!-- Introduction Section -->
+    <section>
+        <div class="center">
+
+            <h2 id="zoomElement" class="zoom-effect" class="h2white"> Welcome to Twice As Nice Crochet!</h2>
+        </div>
+        <script>
+            // JavaScript for zoom effect on scroll
+            document.addEventListener("DOMContentLoaded", function () {
+                var zoomElement = document.getElementById("zoomElement");
+
+                window.addEventListener("scroll", function () {
+                    var scrollPosition = window.scrollY;
+
+                    // Adjust the scroll threshold and scale factor as needed
+                    if (scrollPosition > 100) {
+                        zoomElement.classList.add("active");
+                    } else {
+                        zoomElement.classList.remove("active");
+                    }
+                });
+            });
+        </script>
+        <div class="center">
+            <p style ="font-size: 20px;" class="fade-in">Welcome to Twices As Nice Crochet, where creativity and coziness collide! 
+                Step into our world of yarn and stitches, where we offer a delightful array of crochet patterns 
+                suitable for everyone from beginners to seasoned pros.<br><br>
+
+                At Twice As Nice Crochet, we believe that crafting should be fun and accessible to all. 
+                That's why we provide patterns ranging from beginner-friendly projects to more advanced designs, 
+                ensuring there's something for every skill level. Whether you're just starting your crochet journey or 
+                looking for a new challenge, we've got you covered.<br><br>
+                
+                </p> <br><br>
+        </div>
+        <script>
+            // JavaScript for fading in paragraphs on scroll
+            document.addEventListener("DOMContentLoaded", function () {
+                var paragraphs = document.querySelectorAll(".fade-in");
+
+                function fadeInOnScroll() {
+                    paragraphs.forEach(function (paragraph) {
+                        var bounding = paragraph.getBoundingClientRect();
+
+                        if (
+                            bounding.top >= 0 &&
+                            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                        ) {
+                            paragraph.classList.add("active");
+                        }
+                    });
+                }
+
+                // Attach the scroll event listener
+                window.addEventListener("scroll", fadeInOnScroll);
+
+                // Trigger the animation on page load
+                fadeInOnScroll();
+            });
+        </script>
+
+
+
+        <div class="centerbutton">
+            <form action="aboutUs.html">
+                <button type="submit" class="button"> Learn More </button>
+              </form>
+    </div>
+    
+
+</section>
+
+
+<!-- Best Sellers Section -->
+<div class="center">
+    <div id="center-best-sellers">
+        <h2 class="slide-up"> Best Sellers: </h2>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var elements = document.querySelectorAll(".slide-up");
+
+        function fadeInOnScroll() {
+            elements.forEach(function (element) {
+                var scrollPosition = window.scrollY;
+                var elementOffsetTop = element.offsetTop;
+                var windowHeight = window.innerHeight;
+
+                if (scrollPosition > elementOffsetTop - windowHeight / 2) {
+                    element.classList.add("active");
+                }
+            });
+        }
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", fadeInOnScroll);
+
+        // Trigger the animation on page load
+        fadeInOnScroll();
+    });
+</script>
+<section id="best-seller-section">
+    <div class="best-seller">
+        <img src="Assets/pics/patterns/Amigurumi/Flowerpat.jpg" alt="Beginner Friendly Flower Pattern">
+        <p style="text-align: left;">Create a heartfelt gift or add a touch of charm to any project with this versatile crochet flower pattern. Perfect for everyone,
+             from moms to significant others, this pattern is simple yet elegant, making it suitable for any skill level.<span id="dots1">...</span><span id="more1" style="display: none;"><br><br>
+
+            With just a few basic stitches, you can craft a beautiful blossom that can be used to embellish 
+            clothing, accessories, home decor, and more. Whether you're a seasoned crocheter or just starting out, 
+            this pattern is sure to bring joy to anyone who receives it.
+            
+        </span><a class="buttonb" onclick="myFunction1()" id="myBtn1">Read more</a></p>
+
+        
+        <script>
+            function myFunction1() {
+                var dots1 = document.getElementById("dots1");
+                var moreText1 = document.getElementById("more1");
+                var btnText1 = document.getElementById("myBtn1");
+              
+                if (dots1.style.display === "none") {
+                    dots1.style.display = "inline";
+                    btnText1.innerHTML = "Read more"; 
+                    moreText1.style.display = "none";
+                } else {
+                    dots1.style.display = "none";
+                    btnText1.innerHTML = "Read less"; 
+                    moreText1.style.display = "inline";
+                }
+            }
+        </script>
+                <h3> $8.00 </h3>
+                <h4>Beginner Friendly Flower Bouquet Pattern </h4>
+                <button class="buttonh shopNowBtn" data-name="Beginner Friendly Flower Bouquet Pattern" data-price="8.00">Shop Now</button>
+
+    </div>
+
+
+
+    <div class="best-seller">
+        <img src="Assets/pics/clothes/sweaters/swiftcardigan.jpg" alt="Taylor Swift Cardigan">
+        <p style="text-align: left;">Introducing the Taylor Swift Limited Edition Handmade Cardigan, a must-have for any Taylor Swift fan! This cozy cardigan is not only a 
+            stylish tribute to Taylor's iconic fashion sense but also a testament to her love for comfort. Handmade<span id="dots2">...</span><span id="more2"> with care, it embodies the warmth and nostalgia 
+            of Taylor's music, making it the perfect addition to any fan's collection. Wrap yourself in fandom and coziness with this exclusive cardigan inspired by 
+            one of Taylor's most beloved pieces. Agnes was passionate about filling positions with the 
+
+        </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+
+        <script>
+            function myFunction2() {
+                var dots2 = document.getElementById("dots2");
+                var moreText2 = document.getElementById("more2");
+                var btnText2 = document.getElementById("myBtn2");
+              
+                if (dots2.style.display === "none") {
+                    dots2.style.display = "inline";
+                    btnText2.innerHTML = "Read more"; 
+                    moreText2.style.display = "none";
+                } else {
+                    dots2.style.display = "none";
+                    btnText2.innerHTML = "Read less"; 
+                    moreText2.style.display = "inline";
+                }
+            }
+        </script>
+        <h3> <s style="color:gray">150.00</s> <br> $145.00  </h3>
+        <h4> Taylor Swift Limited Edition Cardigan </h4>
+        <button class="buttonh shopNowBtn" data-name="Taylor Swift Limited Edition Cardigan" data-price="145.00">Shop Now</button>
+
+
+    </div>
+
+    <div class="best-seller">
+        <img src="Assets/pics/clothes/accessories/beginnershroom.jpg" alt=" Beginner Friendly Mushroom case for Airpods">
+        <p style="text-align: left;">
+            Wrap your AirPods in a touch of woodland charm with our handmade crochet Mushroom Case. Crafted with care and attention to detail, 
+            this snug little cozy is the perfect accessory for those who adore the cottage core aesthetic.<span id="dots3">...</span><span id="more3"><br><br>
+
+            Imbued with the whimsy of the forest floor, each case is lovingly crocheted to resemble a charming mushroom, complete with 
+            delicate spots and a quaint stem. Its soft, woolen texture provides a gentle cushion for your AirPods, keeping them safe from 
+            scratches and bumps as you carry them throughout your day.
+           
+        </span><a class="buttonb" onclick="myFunction3()" id="myBtn3">Read more</a></p>
+
+        <script>
+            function myFunction3() {
+                var dots3 = document.getElementById("dots3");
+                var moreText3 = document.getElementById("more3");
+                var btnText3 = document.getElementById("myBtn3");
+              
+                if (dots3.style.display === "none") {
+                    dots3.style.display = "inline";
+                    btnText3.innerHTML = "Read more"; 
+                    moreText3.style.display = "none";
+                } else {
+                    dots3.style.display = "none";
+                    btnText3.innerHTML = "Read less"; 
+                    moreText3.style.display = "inline";
+                }
+            }
+        </script>
+                <h3> $7.00 </h3>
+                <h4> Mushroom Case for Airpods Pattern</h4>
+                <button class="buttonh shopNowBtn" data-name="Mushroom Case for Airpods Pattern" data-price="7.00">Shop Now</button>
+    </div>
+    <script>
+        // Retrieve the cart data from localStorage
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Display each item in the shopping cart
+        var cartItems = document.getElementById('cartItems');
+        cart.forEach(function(item) {
+            var listItem = document.createElement('li');
+            listItem.textContent = item.name + ' - $' + item.price.toFixed(2);
+            cartItems.appendChild(listItem);
+        });
+    </script>
+    
+    <script>
+        // Get all the "Shop Now" buttons
+        var shopNowButtons = document.querySelectorAll('.shopNowBtn');
+    
+        // Add event listener to each button
+        shopNowButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Get the product name and price from the button's data attributes
+                var productName = button.getAttribute('data-name');
+                var productPrice = parseFloat(button.getAttribute('data-price'));
+                
+                // Store the product data in localStorage
+                var cartItem = { name: productName, price: productPrice };
+                var cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(cartItem);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                
+                // Redirect to the cart.html page
+                window.location.href = 'cart.html';
+            });
+        });
+    </script>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fcd5ce" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,181.3C384,203,480,245,576,224C672,203,768,117,864,101.3C960,85,1056,139,1152,160C1248,181,1344,171,1392,165.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+</div>
+<!-- 3rd section-->
+<section>
+    <div class="center">
+    <div id="center-who-we-are">
+        <h2 class="slide-up"> Who We Are </h2>
+    </div>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var elements = document.querySelectorAll(".slide-up");
+
+    function fadeInOnScroll() {
+        elements.forEach(function (element) {
+            var scrollPosition = window.scrollY;
+            var elementOffsetTop = element.offsetTop;
+            var windowHeight = window.innerHeight;
+
+            if (scrollPosition > elementOffsetTop - windowHeight / 2) {
+                element.classList.add("active");
+            }
+        });
+    }
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", fadeInOnScroll);
+
+    // Trigger the animation on page load
+    fadeInOnScroll();
+});
+
+    
+        </script>
+              <div class="vertical-image-container">
+                <img src="Assets/pics/Natalies/nw.jpg" alt="Natalie Wong" class="vertical-image">
+              </div>
+            
+<div style="text-align: left;">
+     <p class="fade-in">
+
+        Founded by 
+        two friends, Natalie Wong and Natalie Vidarte, our website is a labor of love born from a 
+        shared passion for crocheting and a desire to spread the joy of this timeless craft.
+        <br><br>
+        Natalie Wong and Natalie Vidarte, came together with a vision to create a welcoming 
+        space for crocheters of all levels. With backgrounds in teaching and design, they are 
+        dedicated to making the world of crochet accessible and enjoyable for everyone.
+        <br><br>
+     </p> <br><br>
+</div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var paragraphs = document.querySelectorAll(".fade-in");
+    
+                function fadeInOnScroll() {
+                    paragraphs.forEach(function (paragraph) {
+                        var bounding = paragraph.getBoundingClientRect();
+    
+                        if (
+                            bounding.top >= 0 &&
+                            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                        ) {
+                            paragraph.classList.add("active");
+                        }
+                    });
+                }
+    
+                // Attach the scroll event listener
+                window.addEventListener("scroll", fadeInOnScroll);
+    
+                // Trigger the animation on page load
+                fadeInOnScroll();
+            });
+        </script>
+                <div class="vertical-image-container">
+                    <img src="Assets/pics/Natalies/nv.jpg" alt="Natalie Vidarte" class="vertical-image">
+                  </div>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var images = document.querySelectorAll(".vertical-image");
+                
+                        function handleScroll() {
+                            var scrollPosition = window.scrollY || window.pageYOffset;
+                
+                            // Adjust this threshold based on when you want the effect to trigger
+                            var threshold = 300;
+                
+                            images.forEach(function (image) {
+                                var bounding = image.getBoundingClientRect();
+                
+                                if (scrollPosition > threshold) {
+                                    image.classList.add("zoomed");
+                                } else {
+                                    image.classList.remove("zoomed");
+                                }
+                            });
+                        }
+                
+                        // Attach the scroll event listener
+                        window.addEventListener("scroll", handleScroll);
+                
+                        // Add a class to enable smooth scroll transition
+                        document.body.classList.add("scroll-transition");
+                
+                        // Trigger the animation on page load
+                        handleScroll();
+                    });
+                </script>
+        <div class="center">
+            <h2 class="slide-up">  What We Do </h2>
+        </div>
+            <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var h1Element = document.getElementById("yourH1ElementId"); // Replace with your actual h1 element ID
+        
+            function fadeInOnScroll() {
+                var scrollPosition = window.scrollY;
+                var elementOffsetTop = h1Element.offsetTop;
+                var windowHeight = window.innerHeight;
+        
+                if (scrollPosition > elementOffsetTop - windowHeight / 2) {
+                    h1Element.classList.add("active");
+                    // Remove the scroll event listener once the animation has occurred
+                    window.removeEventListener("scroll", fadeInOnScroll);
+                }
+            }
+        
+            // Attach the scroll event listener
+            window.addEventListener("scroll", fadeInOnScroll);
+        });
+        
+            </script>
+                  
+        <div style="text-align: left;">
+        <p class="fade-in">
+            From beginner workshops to advanced patterns, Twices as Nice Crochet offers a wide range of 
+            resources to suit every skill level. Whether you're picking up a hook for the first time or
+             looking for your next challenging project, you'll find something to inspire you here.
+            <br><br>
+            But Twices as Nice Crochet isn't just about patterns and workshops. We also offer a 
+            curated selection of handmade crochet items, lovingly crafted by Natalie Wong and Natalie
+             Vidarte themselves. Each piece is made with the highest quality yarns and attention to 
+             detail, ensuring both beauty and durability.
+             <br><br>
+            At Twices as Nice Crochet, we believe that crocheting is more than just a hobby—it's a 
+            way to connect, create, and unwind. Join us on this journey as we explore the endless
+             possibilities of crochet together!
+        </p></div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var paragraphs = document.querySelectorAll(".fade-in");
+        
+                    function fadeInOnScroll() {
+                        paragraphs.forEach(function (paragraph) {
+                            var bounding = paragraph.getBoundingClientRect();
+        
+                            if (
+                                bounding.top >= 0 &&
+                                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                            ) {
+                                paragraph.classList.add("active");
+                            }
+                        });
+                    }
+        
+                    // Attach the scroll event listener
+                    window.addEventListener("scroll", fadeInOnScroll);
+        
+                    // Trigger the animation on page load
+                    fadeInOnScroll();
+                });
+            </script>
+   
+</section>
+
+
+<!-- TABLE -->
+<div class="center">
+    <h2  id="yourH1ElementId" class="slide-up"> Why Choose <i> Twice As Nice Crochet</i> ? </h2>
+</div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var elements = document.querySelectorAll(".slide-up");
+
+    function fadeInOnScroll() {
+        elements.forEach(function (element) {
+            var scrollPosition = window.scrollY;
+            var elementOffsetTop = element.offsetTop;
+            var windowHeight = window.innerHeight;
+
+            if (scrollPosition > elementOffsetTop - windowHeight / 2) {
+                element.classList.add("active");
+            }
+        });
+    }
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", fadeInOnScroll);
+
+    // Trigger the animation on page load
+    fadeInOnScroll();
+});
+
+
+    </script>
+<table>
+<tr>
+    <th>Reason: </th>
+    <th>Answer: </th>
+</tr>
+<tr>
+    <td>1. Why should I choose Twices as Nice Crochet over other crochet websites?</td>
+    <td>Twices as Nice Crochet is more than just a website; it's a community-driven platform 
+        founded by two passionate crocheters, Natalie Wong and Natalie Vidarte. We offer a diverse 
+        range of crochet patterns, handmade items, and workshops tailored for all skill levels. 
+        Our commitment to quality, creativity, and inclusivity sets us apart, ensuring that 
+        every crocheter feels welcome and inspired.</td>
+</tr>
+<tr>
+    <td>2. What makes Twices as Nice Crochet's handmade items special?</td>
+    <td>Each handmade item at Twices as Nice Crochet is crafted with love and attention to detail
+         by Natalie Wong and Natalie Vidarte themselves. We take pride in using high-quality
+          yarns and innovative designs to create pieces that are not only beautiful but also
+           durable and practical. When you choose one of our handmade items, you're not just buying 
+           a product; you're supporting independent artists and bringing a little piece of handmade 
+           joy into your life.</td>
+</tr>
+<tr>
+    <td>3. Why should I attend a workshop at Twices as Nice Crochet?</td>
+    <td> Our workshops at Twices as Nice Crochet are designed to be fun, informative, and 
+        accessible for crocheters of all levels. Led by experienced instructors, our workshops 
+        cover a wide range of topics, from basic stitches to advanced techniques, ensuring that 
+        there's something for everyone. Whether you're looking to improve your skills, meet fellow 
+        crocheters, or simply unwind and have fun, our workshops provide a supportive and welcoming
+         environment where you can learn, create, and connect.</td>
+</tr>
+</table>
+
+<div class="centerbutton">
+    <form action="contact.html">
+        <button type="submit" class="button"> Contact Us </button>
+      </form>
+    </div>
+
+    <!--footer-->
+      <!--footer-->
+      <footer><br>
+        <div class="navbar">
+                    <!--6/5/2024 NWong MOD 9L: modify footer links to match our sitemap-->
+                <a href="home.html">Home</a> 
+                <a href="patterns.html">Patterns</a>
+                <a href="products.html">Products</a> 
+                <a href="customOrders.html">Custom Orders</a> 
+                <a href="supplies.html">Supplies</a> 
+                <a href="workshops.html">Workshops</a> 
+                <a href="FAQ.html">FAQS</a> 
+                <a href="aboutUs.html">About Us</a> 
+                <a href="contact.html">Contact Us</a> 
+        </div><br>
+        The site best viewed in Firefox or Chrome<br>
+                <!--6/5/2024 NWong MOD 2L: modify copyright and email to match out company-->
+           Twice As Nice Crochet Copyright &copy; 2024
+           <a href="mailto:twiceasnicecrochet@gmail.com">twiceasnicecrochet@gmail.com</a><br><br>
+           
+            <!--6/5/2024 NWong NEW 4L: add page last modified info to footer-->
+        <script type = "text/javascript">
+            var modDate = new Date( document.lastModified );
+            document.write ( "This page was last modified " + modDate.toLocaleString() );
+        </script>
+    </footer>
+</div>
+</body>
+</html>
