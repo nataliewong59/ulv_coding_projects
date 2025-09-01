@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Coded by" content="Natalie Vidarte Alvarado">
+
+    <meta name="keywords" content="Twice as Nice, crochet, beginner-level, beginner, beginners, intermediate-level, intermediate Patterns, advanced-level, supplies, must haves.">
+
+    <meta name="description" content="Explore our collection of free crochet patterns and start your crafting journey today! From beginner-friendly projects to more advanced designs, our free patterns 
+    offer something for everyone. Download your favorites and get stitching – the possibilities are endless!">
+
+    <title>Patterns</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/print.css" media="print" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <!--6/7/2024 NVidarte MOD 37L: modify the  navigation to find corresponding html files-->
+   <header class="header">
+    <nav class="desktop-menu">
+        <img src="../Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+        <ul>
+            <!-- Main Menu Items -->
+            <li><a href="../home.html">Home</a></li>
+            <li>
+                <a href="../patterns.html">Patterns</a>
+                <ul class="submenu">
+                    <li><a href="../patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                    <li><a href="../patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                    <li><a href="../patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                    <li><a href="../patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                    <li><a href="../patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                    <li><a href="../patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                    <li><a href="../patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                </ul>
+            </li>
+            <li>
+                <a href="../products.html"> Products </a>
+                <ul class="submenu">
+                    <li><a href="../productssubm/clothingProducts.html">Clothing</a></li><br>
+                    <li><a href="../productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                    <li><a href="../productssubm/patternsProducts.html">Patterns</a></li><br>
+                </ul>
+            </li>
+            <li><a href="../customOrders.html">Custom Orders</a></li>
+            <li><a href="../supplies.html"> Supplies </a></li>
+            <li><a href="../workshops.html"> Workshops</a></li>
+            <li><a href="../FAQ.html"> FAQs </a></li>
+           
+            <li>
+                <a href="../aboutus.html">About Us</a>
+                <!-- Move submenu inside the "Contact Us" <li> -->
+                <ul class="submenu">
+                    <li><a href="../ourMission.html">Our Mission</a></li><br>
+                </ul>
+            </li>
+                <li><a href="../contact.html">Contact Us</a></li><br>
+                <li><a href="../cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+            
+        </ul>
+            <script>
+                // JavaScript for submenu functionality
+                document.addEventListener("DOMContentLoaded", function () {
+                    var submenuItems = document.querySelectorAll('.desktop-menu .submenu');
+
+                    submenuItems.forEach(function (item) {
+                        var parentItem = item.closest('li');
+
+                        if (parentItem) {
+                            parentItem.addEventListener('mouseenter', function () {
+                                item.classList.add('active');
+                            });
+
+                            parentItem.addEventListener('mouseleave', function () {
+                                item.classList.remove('active');
+                            });
+                        }
+                    });
+                });
+            </script>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="btn15" data-menu="15">
+                    <div class="icon"></div>
+                </div>
+                <img src="../Assets/logo/tanlogophone.png" style="height:50px;" alt="Twice as Nice Crochet Logo">
+            </div>
+            <script>
+                // JavaScript for mobile menu functionality
+                document.addEventListener("DOMContentLoaded", function () {
+                    var mobileMenu = document.getElementById("mobile-menu");
+                    var mainMenu = document.querySelector(".menu");
+
+                    mobileMenu.addEventListener("click", function () {
+                        mainMenu.classList.toggle("active");
+                    });
+                });
+            </script>
+              <!--6/5/2024 NWong MOD 32L: modify the mobile navigation to fit with our sitemap, move our logo to the top-->
+              <ul class="menu">
+                <!-- Main Menu Items -->
+                <li><a href="../home.html">Home</a></li>
+                <li>
+                    <a href="../patterns.html">Patterns</a>
+                    <ul class="submenu">
+                        <li><a href="../patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                        <li><a href="../patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                        <li><a href="../patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                        <li><a href="../patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                        <li><a href="../patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                        <li><a href="../patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                        <li><a href="../patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../products.html"> Products </a>
+                    <ul class="submenu">
+                        <li><a href="../productssubm/clothingProducts.html">Clothing</a></li><br>
+                        <li><a href="../productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                        <li><a href="../productssubm/patternsProducts.html">Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="../customOrders.html">Custom Orders</a></li>
+                <li><a href="../supplies.html"> Supplies </a></li>
+                <li><a href="../workshops.html"> Workshops</a></li>
+                <li><a href="../FAQ.html"> FAQs </a></li>
+               
+                <li>
+                    <a href="../aboutus.html">About Us</a>
+                    <!-- Move submenu inside the "Contact Us" <li> -->
+                    <ul class="submenu">
+                        <li><a href="../ourMission.html">Our Mission</a></li><br>
+                    </ul>
+                </li>
+                    <li><a href="../contact.html">Contact Us</a></li><br>
+                    <li><a href="../cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+        </nav>
+    </div>
+   
+</header>
+
+
+
+<!-- Thumbnail -->
+<section id="thumbnailcontact"></section>     
+        <div id="img-overlay">
+            <h2 id="title" class="h2white"> Free Patterns </h2>
+        </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var imgOverlay = document.getElementById("img-overlay");
+
+        function slideUpOnScroll() {
+            var bounding = imgOverlay.getBoundingClientRect();
+
+            if (
+                bounding.top >= 0 &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            ) {
+                imgOverlay.classList.add("active");
+            }
+        }
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", slideUpOnScroll);
+
+        // Trigger the animation on page load
+        slideUpOnScroll();
+    });
+</script>
+     <!--6/7/2024 NVidarte MOD 3L: modify the  breadcrumb-->
+    <div class="breadcrumb">
+        <a href="../home.html">Home / </a>
+        <a href="../patterns.html">Patterns /</a>
+        <a href="freePatterns.html"> Free Patterns </a>
+    </div>
+
+    <div class="left-sidebar-grid">
+        <main class="main-content">
+    <section>
+        <h2 > Free Patterns: </h2>
+        <p>Explore our collection of free crochet patterns and start your crafting journey today! 
+            From beginner-friendly projects to more advanced designs, our free patterns offer something for 
+            everyone. Download your favorites and get stitching – the possibilities are endless!</p>
+    </section>
+
+    
+<!-- Steps -->
+<section id="product-section">
+    
+    <div class="product">
+        <img src="../Assets/pics/patterns/Amigurumi/cat2.jpeg" alt=" Cat beginner ">
+        <p style="text-align: left;">
+            Looking for a purr-fect project to start your crochet journey? Our Cat Crochet Pattern is just what you need! 
+            Designed with beginners in mind, this pattern features simple stitches and easy-to-follow instructions, 
+            making it an ideal<span id="dots3">...</span><span id="more3"><br><br>
+
+                choice for those new to crochet. Create your very own cute and cuddly cat, complete with whiskers and a tail,
+                 in no time. Whether you're crocheting for yourself or as a gift for a fellow cat lover, our Cat Crochet Pattern
+                  is sure to delight with its charm and simplicity.
+           
+        </span><a class="buttonb" onclick="myFunction3()" id="myBtn3">Read more</a></p>
+
+        <script>
+            function myFunction3() {
+                var dots3 = document.getElementById("dots3");
+                var moreText3 = document.getElementById("more3");
+                var btnText3 = document.getElementById("myBtn3");
+              
+                if (dots3.style.display === "none") {
+                    dots3.style.display = "inline";
+                    btnText3.innerHTML = "Read more"; 
+                    moreText3.style.display = "none";
+                } else {
+                    dots3.style.display = "none";
+                    btnText3.innerHTML = "Read less"; 
+                    moreText3.style.display = "inline";
+                }
+            }
+        </script>
+                <h3> Free </h3>
+                <h4> Cat Crochet Pattern - Beginner-Friendly and Adorable </h4>
+                <button class="buttonh" onclick="window.location.href='../FREECROCHETPDF.pdf'" download>Get For Free</button>
+    </div>
+ 
+    <div class="product">
+        <img src="../Assets/pics/patterns/Amigurumi/ducks.jpeg" alt="ducks beginner">
+        <p style="text-align: left;">Dive into the world of crochet with our adorable Crochet Duck Patterns, 
+            perfect for all skill levels, especially beginners! These round and quirky ducks come in a variety
+             of delightful variations, including brown and green, sunny yellow, and crisp white.<span id="dots2">...</span><span id="more2">
+                
+                With their simple shapes and charming details, these patterns are ideal for beginners looking for a fun 
+                and satisfying project. Create your own flock of crochet ducks to adorn your shelves or gift to your 
+                fellow bird enthusiasts. Whether you're stitching up a sunny yellow duckling or a tranquil white swan,
+                our Crochet Duck Patterns are sure to bring a touch of whimsy to your crochet collection! 
+
+        </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+
+        <script>
+            function myFunction2() {
+                var dots2 = document.getElementById("dots2");
+                var moreText2 = document.getElementById("more2");
+                var btnText2 = document.getElementById("myBtn2");
+              
+                if (dots2.style.display === "none") {
+                    dots2.style.display = "inline";
+                    btnText2.innerHTML = "Read more"; 
+                    moreText2.style.display = "none";
+                } else {
+                    dots2.style.display = "none";
+                    btnText2.innerHTML = "Read less"; 
+                    moreText2.style.display = "inline";
+                }
+            }
+        </script>
+        <h3><br> Free </h3>
+        <h4> Crochet Duck Patterns - Round and Quirky, Great for Beginners </h4>
+        <button class="buttonh" onclick="window.location.href='../FREECROCHETPDF.pdf'" download>Get For Free</button>
+    </div>
+    
+    <div class="product">
+        <img src="../Assets/pics/patterns/Amigurumi/froginbasket.jpeg" alt=" Mini-Frog In Basket beginner">
+        <p style="text-align: left;">
+            Hop into the world of crochet with our adorable Mini Frog in a Basket Crochet Pattern, perfect for beginners and available for free<span id="dots3">...</span><span id="more3"><br><br>
+
+                ! This charming pattern features a cute little frog nestled in a cozy crochet basket, making it a
+                 delightful addition to your collection. With simple stitches and clear instructions, even new
+                  crocheters can create their own miniature masterpiece in no time. Stitch up this adorable project
+                   to decorate your space or to gift to a fellow frog enthusiast. Download the pattern for free and
+                    let the crocheting fun begin!
+           
+        </span><a class="buttonb" onclick="myFunction3()" id="myBtn3">Read more</a></p>
+
+        <script>
+            function myFunction3() {
+                var dots3 = document.getElementById("dots3");
+                var moreText3 = document.getElementById("more3");
+                var btnText3 = document.getElementById("myBtn3");
+              
+                if (dots3.style.display === "none") {
+                    dots3.style.display = "inline";
+                    btnText3.innerHTML = "Read more"; 
+                    moreText3.style.display = "none";
+                } else {
+                    dots3.style.display = "none";
+                    btnText3.innerHTML = "Read less"; 
+                    moreText3.style.display = "inline";
+                }
+            }
+        </script>
+                <h3> Free </h3>
+                <h4> Mini Frog in a Basket Crochet Pattern - Perfect for Beginners </h4>
+                <button class="buttonh" onclick="window.location.href='../FREECROCHETPDF.pdf'" download>Get For Free</button>
+    </div>
+
+        <div class="product">
+            <img src="../Assets/pics/patterns/Amigurumi/otter.jpeg" alt="otter - Beginner">
+            <p style="text-align: left;">
+                Dive into the world of crochet with our adorable Crochet Otter Pattern, perfect for beginners! This charming pattern features a sweet little otter, complete 
+                <span id="dots2">...</span><span id="more2">
+                    
+                    with its signature whiskers and cuddly body. With simple stitches and easy-to-follow instructions, 
+                    even those new to crochet can create their own lovable otter in no time. Whether you're crafting for 
+                    yourself or making a gift for a friend, our Crochet Otter Pattern is sure to bring a smile to your 
+                    face as you stitch up your very own aquatic friend!
+    
+            </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+    
+            <script>
+                function myFunction2() {
+                    var dots2 = document.getElementById("dots2");
+                    var moreText2 = document.getElementById("more2");
+                    var btnText2 = document.getElementById("myBtn2");
+                  
+                    if (dots2.style.display === "none") {
+                        dots2.style.display = "inline";
+                        btnText2.innerHTML = "Read more"; 
+                        moreText2.style.display = "none";
+                    } else {
+                        dots2.style.display = "none";
+                        btnText2.innerHTML = "Read less"; 
+                        moreText2.style.display = "inline";
+                    }
+                }
+            </script>
+            <h3><br> Free </h3>
+            <h4> Crochet Otter Pattern - Beginner Level </h4>
+            <button class="buttonh" onclick="window.location.href='../FREECROCHETPDF.pdf'" download>Get For Free</button>
+        </div>
+
+        <div class="product">
+            <img src="../Assets/pics/patterns/Amigurumi/duck3.jpeg" alt="duck Advanced">
+            <p style="text-align: left;">
+                Dive into a challenging yet rewarding crochet project with our Advanced Crochet Duck Pattern, available for free! 
+                This intricate pattern is perfect for seasoned crocheters looking for a new challenge. Create a stunning duck with 
+                intricate details and lifelike features, from its feathers to its beak.
+                <span id="dots2">...</span><span id="more2">
+                    
+                While this pattern is advanced, it's completely free to download, making it a fantastic opportunity to level up your crochet 
+                skills without breaking the bank. Whether you're crafting for yourself or gifting to a fellow crochet enthusiast, our 
+                Advanced Crochet Duck Pattern is sure to impress with its beauty and complexity.
+    
+            </span><a class="buttonb" onclick="myFunction2()" id="myBtn2">Read more</a></p>
+    
+            <script>
+                function myFunction2() {
+                    var dots2 = document.getElementById("dots2");
+                    var moreText2 = document.getElementById("more2");
+                    var btnText2 = document.getElementById("myBtn2");
+                  
+                    if (dots2.style.display === "none") {
+                        dots2.style.display = "inline";
+                        btnText2.innerHTML = "Read more"; 
+                        moreText2.style.display = "none";
+                    } else {
+                        dots2.style.display = "none";
+                        btnText2.innerHTML = "Read less"; 
+                        moreText2.style.display = "inline";
+                    }
+                }
+            </script>
+            <h3><br> Free </h3>
+            <h4> Crochet duck - Advanced Level </h4>
+            <button class="buttonh" onclick="window.location.href='../FREECROCHETPDF.pdf'" download>Get For Free</button>
+        </div>
+
+</section>
+        </main>
+
+        <div class="left-sidebar">
+            <section class="links-container">
+                <a href="../patterns.html"><br><br> Patterns <br><br><br></a><br>
+                <a href="skillQuiz.html"><br><br> Skill Quiz <br><br><br></a><br>
+                <a href="freePatterns.html"><br><br> Free Patterns <br><br><br></a><br>
+                <a href="beginnerPatterns.html"><br><br> Beginner Patterns <br><br><br></a><br>
+                <a href="intermediatePatterns.html"><br><br> Intermediate Patterns <br><br><br></a><br>
+                <a href="advancedPatterns.html"><br><br> Advanced Patterns <br><br><br></a><br>
+                <a href="clothingPatterns.html"><br><br> Clothing Patterns <br><br><br></a><br>
+                <a href="amigurumiPatterns.html"><br><br> Amigurumi Patterns <br><br><br></a><br>
+            </section>
+        </div>
+    <br>
+
+        
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var elements = document.querySelectorAll(".fade-in, .slide-left");
+    
+                function fadeInOnScroll() {
+                    elements.forEach(function (element) {
+                        var bounding = element.getBoundingClientRect();
+    
+                        if (
+                            bounding.top >= 0 &&
+                            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                        ) {
+                            element.classList.add("active");
+                        }
+                    });
+                }
+    
+                // Attach the scroll event listener
+                window.addEventListener("scroll", fadeInOnScroll);
+    
+                // Trigger the animation on page load
+                fadeInOnScroll();
+            });
+        </script>
+      <!--footer-->
+      <footer><br>
+        <div class="navbar">
+                    <!--6/5/2024 NWong MOD 9L: modify footer links to match our sitemap-->
+                <a href="../home.html">Home</a> 
+                <a href="../patterns.html">Patterns</a>
+                <a href="../products.html">Products</a> 
+                <a href="../customOrders.html">Custom Orders</a> 
+                <a href="../supplies.html">Supplies</a> 
+                <a href="../workshops.html">Workshops</a> 
+                <a href="../FAQ.html">FAQS</a> 
+                <a href="../aboutUs.html">About Us</a> 
+                <a href="../contact.html">Contact Us</a> 
+        </div><br>
+        The site best viewed in Firefox or Chrome<br>
+                <!--6/5/2024 NWong MOD 2L: modify copyright and email to match out company-->
+           Twice As Nice Crochet Copyright &copy; 2024 
+           <a href="mailto:twiceasnicecrochet@gmail.com">twiceasnicecrochet@gmail.com</a><br><br>
+           
+            <!--6/5/2024 NWong NEW 4L: add page last modified info to footer-->
+        <script type = "text/javascript">
+            var modDate = new Date( document.lastModified );
+            document.write ( "This page was last modified " + modDate.toLocaleString() );
+        </script>
+    </footer>
+</body>
+</html>

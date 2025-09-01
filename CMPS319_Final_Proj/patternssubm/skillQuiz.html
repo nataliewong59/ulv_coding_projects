@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!DOCTYPE HTML>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/styleforskillQ.css">
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Coded by" content="Natalie Vidarte Alvarado & Natalie Wong">
+
+    <meta name="keywords" content="Twice as Nice, crochet, beginner-level, beginner, beginners, intermediate-level, intermediate Patterns, advanced-level, supplies, must haves.">
+
+    <meta name="description" content="Not sure where to start? Take our quick and easy quiz to find out which crochet patterns are best suited to your skill level! Whether you're a complete beginner or a seasoned pro, our 
+    quiz will help you navigate our collection and find the perfect projects for you. Answer a few simple questions, and we'll match you with patterns tailored to your experience level, whether it's beginner, intermediate, or 
+    advanced. Say goodbye to guesswork and hello to rochet success – take the quiz now and unlock a world of crafting possibilities!">
+    
+    <script src="../skillQuizscripts.js"></script>
+    <link rel="stylesheet" href="..css/print.css" media="print" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Skill Quiz</title>
+
+    <style> 
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*margin-left: 20%;*/
+        z-index: 1;
+        }
+
+        nav {z-index: 9999;}
+        nav img { 
+            height: 100px;
+            width: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+ <!--6/7/2024 NVidarte MOD 37L: modify the  navigation to find corresponding html files-->
+   <header class="header">
+    <nav class="desktop-menu">
+        <img src="../Assets/logo/tanlogo.png" alt="Twice As Nice Crochet Logo" id="logo">
+        <ul>
+            <!-- Main Menu Items -->
+            <li><a href="../home.html">Home</a></li>
+            <li>
+                <a href="../patterns.html">Patterns</a>
+                <ul class="submenu">
+                    <li><a href="../patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                    <li><a href="../patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                    <li><a href="../patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                    <li><a href="../patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                    <li><a href="../patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                    <li><a href="../patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                    <li><a href="../patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                </ul>
+            </li>
+            <li>
+                <a href="../products.html"> Products </a>
+                <ul class="submenu">
+                    <li><a href="../productssubm/clothingProducts.html">Clothing</a></li><br>
+                    <li><a href="../productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                    <li><a href="../productssubm/patternsProducts.html">Patterns</a></li><br>
+                </ul>
+            </li>
+            <li><a href="../customOrders.html">Custom Orders</a></li>
+            <li><a href="../supplies.html"> Supplies </a></li>
+            <li><a href="../workshops.html"> Workshops</a></li>
+            <li><a href="../FAQ.html"> FAQs </a></li>
+           
+            <li>
+                <a href="../aboutus.html">About Us</a>
+                <!-- Move submenu inside the "Contact Us" <li> -->
+                <ul class="submenu">
+                    <li><a href="../ourMission.html">Our Mission</a></li><br>
+                </ul>
+            </li>
+                <li><a href="../contact.html">Contact Us</a></li><br>
+                <li><a href="../cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+            
+        </ul>
+            <script>
+                // JavaScript for submenu functionality
+                document.addEventListener("DOMContentLoaded", function () {
+                    var submenuItems = document.querySelectorAll('.desktop-menu .submenu');
+
+                    submenuItems.forEach(function (item) {
+                        var parentItem = item.closest('li');
+
+                        if (parentItem) {
+                            parentItem.addEventListener('mouseenter', function () {
+                                item.classList.add('active');
+                            });
+
+                            parentItem.addEventListener('mouseleave', function () {
+                                item.classList.remove('active');
+                            });
+                        }
+                    });
+                });
+            </script>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="btn15" data-menu="15">
+                    <div class="icon"></div>
+                </div>
+                <img src="../Assets/logo/tanlogophone.png" style="height:50px;" alt="Twice as Nice Crochet Logo">
+            </div>
+            <script>
+                // JavaScript for mobile menu functionality
+                document.addEventListener("DOMContentLoaded", function () {
+                    var mobileMenu = document.getElementById("mobile-menu");
+                    var mainMenu = document.querySelector(".menu");
+
+                    mobileMenu.addEventListener("click", function () {
+                        mainMenu.classList.toggle("active");
+                    });
+                });
+            </script>
+            <!--6/5/2024 NWong MOD 32L: modify the mobile navigation to fit with our sitemap, move our logo to the top-->
+            <ul class="menu">
+                <!-- Main Menu Items -->
+                <li><a href="../home.html">Home</a></li>
+                <li>
+                    <a href="../patterns.html">Patterns</a>
+                    <ul class="submenu">
+                        <li><a href="../patternssubm/skillQuiz.html">Skill Quiz</a></li><br>
+                        <li><a href="../patternssubm/freePatterns.html">Free Patterns</a></li><br>
+                        <li><a href="../patternssubm/beginnerPatterns.html">Beginner Patterns</a></li><br>
+                        <li><a href="../patternssubm/intermediatePatterns.html">Intermediate Patterns</a></li><br>
+                        <li><a href="../patternssubm/advancedPatterns.html">Advanced Patterns</a></li><br>
+                        <li><a href="../patternssubm/clothingPatterns.html">Clothing Patterns</a></li><br>
+                        <li><a href="../patternssubm/amigurumiPatterns.html">Amigurumi Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../products.html"> Products </a>
+                    <ul class="submenu">
+                        <li><a href="../productssubm/clothingProducts.html">Clothing</a></li><br>
+                        <li><a href="../productssubm/amigurumiProducts.html">Amigurumi</a></li><br>
+                        <li><a href="../productssubm/patternsProducts.html">Patterns</a></li><br>
+                    </ul>
+                </li>
+                <li><a href="../customOrders.html">Custom Orders</a></li>
+                <li><a href="../supplies.html"> Supplies </a></li>
+                <li><a href="../workshops.html"> Workshops</a></li>
+                <li><a href="../FAQ.html"> FAQs </a></li>
+               
+                <li>
+                    <a href="../aboutus.html">About Us</a>
+                    <!-- Move submenu inside the "Contact Us" <li> -->
+                    <ul class="submenu">
+                        <li><a href="../ourMission.html">Our Mission</a></li><br>
+                    </ul>
+                </li>
+                    <li><a href="../contact.html">Contact Us</a></li><br>
+                    <li><a href="../cart.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+        </nav>
+    </div>
+        
+        </header>
+
+
+        <div class="breadcrumb">
+            <a href="../home.html"> Home / </a>
+            <a href="../patterns.html"> Patterns / </a>
+            <a href="skillQuiz.html"> Skill Quiz  </a>
+        </div>
+        <div class="container">
+            <div class="center-wrapper">
+                    <div class="center2">
+                        <h1> Skill Quiz </h1>
+                        <div id="timer"></div>
+                        <p id="currentDateTime"></p>
+                        <div id="greeting"></div>
+                        <div id="welcomeMessage"></div>
+                        <div id="nameLink"></div>
+                        <div id="randomImage"></div>
+                        <div id="randomQuote"></div>
+                        
+                    
+                    <!-- Font size selection -->
+                    <label for="fontSize">Font Size (1-30):</label>
+                    <input type="number" id="fontSize" min="1" max="30" oninput="checkFontSize()">
+                    <button onclick="applyFontSize()">Apply</button><br/>
+        
+                    <!-- Font color selection -->
+                    <label for="fontColor">Font Color:</label>
+                    <select id="fontColor">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="magenta">Magenta</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                    <button onclick="applyFontColor()">Apply</button><br><br>
+        
+                    <script>
+                        function applyFontSize() {
+                            var fontSize = document.getElementById("fontSize").value;
+                            var paragraphs = document.getElementsByTagName("p");
+                            for (var i = 0; i < paragraphs.length; i++) {
+                                paragraphs[i].style.fontSize = fontSize + "px";
+                            }
+                        }
+        
+                        function checkFontSize() {
+                            var fontSizeInput = document.getElementById("fontSize");
+                            var fontSize = parseInt(fontSizeInput.value);
+                            if (isNaN(fontSize) || fontSize < 1 || fontSize > 30) {
+                                fontSizeInput.value = Math.max(1, Math.min(fontSize, 30));
+                            }
+                        }
+        
+                        function applyFontColor() {
+                            var fontColor = document.getElementById("fontColor").value;
+                            var paragraphs = document.getElementsByTagName("p");
+                            for (var i = 0; i < paragraphs.length; i++) {
+                                paragraphs[i].style.color = fontColor;
+                            }
+                        }
+        
+                        document.addEventListener("DOMContentLoaded", function () {
+                            checkName(); // Call checkName() when the page loads
+        
+                            var now = new Date(); // current date and time
+                            var hour = now.getHours(); // current hour
+        
+                            // Array with paths of the images that will be randomly selected
+                            var pictures = [
+                                "heart",
+                                "mouse",
+                                "headphones",
+                                "clock",
+                                "tea",
+                                "flower"
+                            ];
+        
+                            // Array with the quotes that will be randomly selected
+                            var quotes = [
+                                " You got this!<br><br><br> <br/>",
+                                " Don't Worry Be Happy!<br><br><br> <br/>",
+                                " Think positive! <br><br><br><br/>",
+                                " Hakuna Matata! <br><br><br> <br/>",
+                                " Good Luck! <br><br><br><br/>"
+                            ];
+        
+                            // write the current date and time to the web page
+                            document.getElementById("currentDateTime").innerHTML = now.toLocaleString() + "<br/>";
+        
+                            // determine whether it is morning
+                            if (hour < 12)
+                                document.getElementById("greeting").innerHTML = "<h2>Good Morning, ";
+                            else {
+                                hour = hour - 12; // convert from 24-hour clock to PM time
+                                // determine whether it is afternoon or evening
+                                if (hour < 6)
+                                    document.getElementById("greeting").innerHTML = "<h2>Good Afternoon, ";
+                                else
+                                    document.getElementById("greeting").innerHTML = "<h2>Good Evening, ";
+                            }
+        
+                            var name;
+        
+                            // Function to check if name is in the cookie
+                            function checkName() {
+                                if (document.cookie) {
+                                    var myCookie = unescape(document.cookie);
+                                    var cookieTokens = myCookie.split("=");
+                                    if (cookieTokens.length > 1) {
+                                        name = cookieTokens[1];
+                                    } else {
+                                        promptName();
+                                    }
+                                } else {
+                                    promptName();
+                                }
+                            }
+        
+                            function promptName() {
+                                name = window.prompt("Please enter your name", "Paul");
+                                document.cookie = "name=" + escape(name);
+                            }
+        
+                            document.getElementById("welcomeMessage").innerHTML = name + ", Welcome to our Skill Quiz!</h2>";
+                            document.getElementById("nameLink").innerHTML = "<a href=\"javascript:wrongPerson()\">Click here if you are not " + name + "</a><br/>";
+        
+                            // Display a random image
+                            document.getElementById("randomImage").innerHTML = "<img src=\"" + pictures[Math.floor(Math.random() * pictures.length)] + ".png\" width=\"230\" height=\"230\" /> <br/>";
+        
+                            // Display a random quote
+                            document.getElementById("randomQuote").innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+        
+                            // Variable to hold the start time of the page
+                            var pageStartTime;
+        
+                            // Function to start the timer when the page loads
+                            function startTimer() {
+                                pageStartTime = new Date();
+                            }
+        
+                            // Function to update the timer display
+                            function updateTimer() {
+                                var now = new Date();
+                                var elapsedTime = Math.floor((now - pageStartTime) / 1000); // Elapsed time in seconds
+                                var minutes = Math.floor(elapsedTime / 60);
+                                var seconds = elapsedTime % 60;
+                                var timeDisplay = "Time elapsed: " + minutes + "m " + seconds + "s";
+                                document.getElementById("timer").textContent = timeDisplay;
+                            }
+        
+                            // Call startTimer() when the page loads
+                            startTimer();
+        
+                            // Update the timer display every second
+                            var timerInterval = setInterval(updateTimer, 1000);
+        
+                            // Clear the interval when the page is unloaded
+                            window.addEventListener("unload", function () {
+                                clearInterval(timerInterval);
+                            });
+                        });
+                    </script>
+    
+
+<div class="center2">
+        <form>
+
+            <!--  Survey Section 1 CHECKBOX - first question -->
+            
+            <h2> 1. What is a slip knot used for in crochet? </h2>
+            <p> Feel free to choose more than one.</p>
+            <div class='content'>
+                <div class="dpx">
+                    <div class='py' required>
+
+                        <label><input type="checkbox" class="option-input radio" id="q1_correct1">Beginning a project</label>
+                        <label><input type="checkbox" class="option-input radio" id="q1_wrong1">Finishing a project</label>
+                        <label><input type="checkbox" class="option-input radio" id="q1_wrong2">Adding a new yarn color</label>
+
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <!--  Survey Section 2 RADIO BUTTONS -->
+            <h2>2. What does the term "ch" stand for in crochet?</h2>
+            <p> Please choose one. </p>
+            <div class='content'>
+                <div class="dpx">
+                    <div class='py'required>
+                        <input type="radio" class="option-input radio2" name="q2_radiobutton" id="q2_correct" value="Ollie" />
+                        <label>Chain</label>
+            
+                        <input type="radio" class="option-input radio2" name="q2_radiobutton" value="Kickflip" />
+                        <label>Change </label>
+            
+                        <input type="radio" class="option-input radio2" name="q2_radiobutton" value="Heelflip" />
+                        <label>Choke</label>
+              
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+
+
+            <!--  Survey Section 3 DROPDOWN -->
+            <h2>3. Which stitch is used to create a solid, dense fabric in crochet?</h2>
+            <p> Please choose one. </p>
+            <div class='content'>
+               <div class="custom-select" style="width:200px;">
+            <select id="q3_correct">
+                <option value="01">Half double crochet</option>
+                <option value="02">Double crochet</option>
+                <option value="03">Single crochet</option>
+            </select>
+                </div>
+                <br><br><br><br><br><br>
+
+
+            <!--  Survey Section 4 RADIO BUTTONS -->
+            <h2>4. How do you increase stitches in crochet? </h2>
+            <p> Please choose one. </p>
+            <div class='content'>
+                <div class="dpx">
+                    <div class='py'required>
+                        <input type="radio" class="option-input radio2" name="q4_radiobutton"  value="Ollie" />
+                        <label>By skipping stitches</label>
+            
+                        <input type="radio" class="option-input radio2" name="q4_radiobutton" id="q4_correct" value="Kickflip" />
+                        <label> By working multiple stitches into the same stitch </label>
+            
+                        <input type="radio" class="option-input radio2" name="q4_radiobutton" value="Heelflip" />
+                        <label>By decreasing stitches</label>
+            
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+
+
+                        <!--  Survey Section 5 RADIO BUTTONS -->
+                        <h2>5. Which of the following is <i>NOT</i> a common crochet term for turning your work?</h2>
+                        <p> Please choose one. </p>
+                        <div class='content'>
+                            <div class="dpx">
+                                <div class='py'required>
+                                    <input type="radio" class="option-input radio2" name="q5_radiobutton" id="q5_correct" value="Ollie" />
+                                    <label>Twist</label>
+                        
+                                    <input type="radio" class="option-input radio2" name="q5_radiobutton" value="Kickflip" />
+                                    <label>Turn</label>
+                        
+                                    <input type="radio" class="option-input radio2" name="q5_radiobutton" value="Heelflip" />
+                                    <label>Rotate</label>
+                        
+                                </div>
+                            </div>
+            
+                        </div>
+                        <br><br><br>
+
+
+            <!--  Survey Section 6 DROPDOWN -->
+            <h2>6. What does "yo" stand for in crochet?</h2>
+            <p> Please choose one. </p>
+            <div class='content'>
+                <div class="custom-select" style="width:200px;">
+            <select id="q6_correct">
+                <option value="01">Yes, okay</option>
+                <option value="02">Yellow orange</option>
+                <option value="03">Yarn over</option>
+            </select>
+                </div>
+                <br><br><br><br><br><br>
+
+
+
+                    <!--  Survey Section 7 CHECKBOX - first question -->
+
+                <h2>7. Which of the following is <i>NOT</i> a common crochet hook size?</h2>
+                <p> Feel free to choose more than one.</p>
+                <div class='content'>
+                    <div class="dpx">
+                        <div class='py' required>
+
+                            <label><input type="checkbox" class="option-input radio" id="q7_correct1">7.0 cm</label>
+                            <label><input type="checkbox" class="option-input radio" id="q7_wrong1">5.5 mm</label>
+                            <label><input type="checkbox" class="option-input radio" id="q7_wrong2">4.0 mm</label>
+                            <label><input type="checkbox" class="option-input radio" id="q7_correct2">10.0 cm</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  Survey Section 8 DROPDOWN -->
+                <h2>8. Which stitch is often used for creating a lacy, open fabric in crochet?</h2>
+                <p> Please choose one. </p>
+                <div class='content'>
+                    <div class="custom-select" style="width:200px;">
+                <select id="q8_correct">
+                    <option value="01">Chain stitch</option>
+                    <option value="02">Double crochet</option>
+                    <option value="03">Single crochet</option>
+                </select>
+                    </div>
+
+                    <script>
+                        // Function to create custom select dropdowns
+                        function createCustomSelects() {
+                            var customSelects = document.getElementsByClassName("custom-select");
+                            for (var i = 0; i < customSelects.length; i++) {
+                                createCustomSelect(customSelects[i]);
+                            }
+                        }
+                    
+                                            // Function to create a single custom select dropdown
+                        function createCustomSelect(selectWrapper) {
+                            var selectElement = selectWrapper.querySelector("select");
+
+                            // Create the main selected item div
+                            var selectedItem = document.createElement("div");
+                            selectedItem.classList.add("select-selected");
+                            selectedItem.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML; // Display the initial option
+                            selectWrapper.appendChild(selectedItem);
+
+                            // Create the dropdown options container
+                            var optionsContainer = document.createElement("div");
+                            optionsContainer.classList.add("select-items", "select-hide");
+
+                            // Include the initial option as the default selected item
+                            var initialOption = document.createElement("div");
+                            initialOption.innerHTML = selectElement.options[0].innerHTML;
+                            initialOption.addEventListener("click", function(e) {
+                                selectedItem.innerHTML = this.innerHTML;
+                                selectElement.selectedIndex = 0;
+                                selectElement.dispatchEvent(new Event('change')); // Dispatch change event to trigger any associated onchange handlers
+                            });
+                            optionsContainer.appendChild(initialOption);
+
+                            // Create custom options for the select element
+                            for (var j = 1; j < selectElement.length; j++) {
+                                var option = document.createElement("div");
+                                option.innerHTML = selectElement.options[j].innerHTML;
+                                option.addEventListener("click", function(e) {
+                                    var selectedIndex = Array.from(this.parentNode.children).indexOf(this);
+                                    selectElement.selectedIndex = selectedIndex;
+                                    selectedItem.innerHTML = this.innerHTML;
+                                    this.parentNode.previousSibling.click();
+                                });
+                                optionsContainer.appendChild(option);
+                            }
+
+                            selectWrapper.appendChild(optionsContainer);
+
+                            // Event listener to toggle dropdown visibility
+                            selectedItem.addEventListener("click", function(e) {
+                                e.stopPropagation();
+                                closeAllSelects(selectWrapper);
+                                this.nextSibling.classList.toggle("select-hide");
+                                this.classList.toggle("select-arrow-active");
+                            });
+                        }
+
+                    
+                        // Function to close all select dropdowns
+                        function closeAllSelects(currentSelect) {
+                            var selectItems = document.getElementsByClassName("select-items");
+                            var selectSelected = document.getElementsByClassName("select-selected");
+                            for (var i = 0; i < selectSelected.length; i++) {
+                                if (currentSelect != selectSelected[i].parentNode) {
+                                    selectSelected[i].classList.remove("select-arrow-active");
+                                }
+                            }
+                            for (var i = 0; i < selectItems.length; i++) {
+                                if (currentSelect != selectItems[i].previousSibling) {
+                                    selectItems[i].classList.add("select-hide");
+                                }
+                            }
+                        }
+                    
+                        // Event listener to close all select dropdowns when clicking outside
+                        document.addEventListener("click", function() {
+                            closeAllSelects();
+                        });
+                    
+                        // Call the function to create custom select dropdowns
+                        createCustomSelects();
+                    </script>
+                    
+
+                    <br><br><br><br><br><br>
+
+                <!--  Survey Section 9 RADIO BUTTONS -->
+                <h2>9. What does "sc" stand for in crochet?</h2>
+                <p> Please choose one. </p>
+                <div class='content'>
+                    <div class="dpx">
+                        <div class='py'required>
+                            <input type="radio" class="option-input radio2" name="q9_radiobutton" id="q9_correct" value="Ollie" />
+                            <label>Single crochet</label>
+                
+                            <input type="radio" class="option-input radio2" name="q9_radiobutton" value="Kickflip" />
+                            <label>Single chain</label>
+                
+                            <input type="radio" class="option-input radio2" name="q9_radiobutton" value="Heelflip" />
+                            <label>Stitch count</label>
+                
+                        </div>
+                    </div>
+
+                </div>
+                <br><br><br>
+
+                                <!--  Survey Section 10 RADIO BUTTONS -->
+                                <h2>10. What is the purpose of a gauge swatch in crochet?</h2>
+                                <p> Please choose one. </p>
+                                <div class='content'>
+                                    <div class="dpx">
+                                        <div class='py'required>
+                                            <input type="radio" class="option-input radio2" name="q10_radiobutton" id="q10_correct" value="Ollie" />
+                                            <label>To ensure your stitches match the pattern's specified size</label>
+                                
+                                            <input type="radio" class="option-input radio2" name="q10_radiobutton" value="Kickflip" />
+                                            <label>To practice new stitches</label>
+                                
+                                            <input type="radio" class="option-input radio2" name="q10_radiobutton" value="Heelflip" />
+                                            <label>To measure the width and length of your finished project</label>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <br><br><br>
+
+            <!--  Survey Section 1 CHECKBOX
+
+            <div class="rating-box" required>
+                <header><b>Rate your campus visit experience.</b></header>
+                <p> One being the worst and 5 being excellent</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <script src="script.js"></script>
+            <br><br><br>-->
+ 
+                
+            <!-- Survey Section 9 -->
+ 
+            <input type="button" id="submit" value="Grade Quiz">
+            <input type="reset">
+        </form>
+    
+             <!-- Output Result -->
+             <div class="center2">
+             <h2>Result</h2>
+             <textarea id="resultTextarea" rows="7" cols="40"></textarea>
+             <input id="resultInput" type="text" size="30" />
+             <p id="messages" class="red">Click 'Grad Quiz' to know your skill level!</p>
+            </div>
+
+        <br>The site best viewed in Firefox or Chrome<br>
+            <!--6/5/2024 NWong MOD 2L: modify copyright and email to match out company-->
+        Twice As Nice Crochet Copyright &copy; 2024
+        <a href="mailto:twiceasnicecrochet@gmail.com">twiceasnicecrochet@gmail.com</a><br><br>
+            <!--6/5/2024 NWong NEW 4L: add page last modified info to footer-->
+        <script type = "text/javascript">
+            var modDate = new Date( document.lastModified );
+            document.write ( "This page was last modified " + modDate.toLocaleString() );
+        </script>
+
+<br><br>
+</body>
+
+</html>
